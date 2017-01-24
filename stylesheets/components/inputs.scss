@@ -1,0 +1,15 @@
+input[type="text"] {
+  position: relative;
+  display: block;
+  margin: 8px;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid $dark-gray;
+  content: attr(name);
+
+  &:focus {
+    border-bottom: 2px solid blue;
+    outline: none;
+  }
+}
