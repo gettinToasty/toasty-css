@@ -1,0 +1,63 @@
+.grid-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  align-content: stretch;
+}
+
+.col {
+  padding: 16px;
+}
+
+.1-1 {
+  flex: 8 1 100%;
+  height: auto;
+}
+
+.7-8 {
+  flex: 7 1 87.5%;
+  height: auto;
+}
+
+.3-4 {
+  flex: 6 1 75%;
+  height: auto;
+}
+
+.5-8 {
+  flex: 5 1 62.5%;
+  height: auto;
+}
+
+.1-2 {
+  flex: 4 1 50%;
+  height: auto;
+}
+
+.3-8 {
+  flex: 3 1 37.5%;
+  height: auto;
+}
+
+.1-4 {
+  flex: 2 1 25%;
+  height: auto;
+}
+
+.1-8 {
+  flex: 1 1 12.5%;
+  height: auto;
+}
+
+.fixed {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .1-8, .1-4, .3-8, .1-2, .5-8, .3-4, .7-8, .1-1 {
+    flex: 0 0 100%;
+  }
+}
