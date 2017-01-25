@@ -1,0 +1,102 @@
+button {
+  box-sizing: border-box;
+  margin: 8px;
+  padding: 8px 16px;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.box-button {
+  border-bottom: 2px solid $light-gray;
+  border-top: 2px solid $light-gray;
+  transition: 0.2s all;
+  color: $light-gray;
+
+  &:after, &:before {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    display: block;
+    background-color: $dark-gray;
+    transition: 0.2s all;
+  }
+
+  &:before {
+    left: 0;
+    top: 0;
+  }
+
+  &:after {
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: $dark-gray;
+    color: $dark-gray;
+
+    &:after, &:before {
+      height: 100%;
+    }
+  }
+
+  &:active {
+    background-color: $lighter-gray;
+  }
+}
+
+.brace-button {
+  color: $light-gray;
+  transition: 0.2s all;
+
+  &:before, &:after {
+    font-size: 16px;
+    position: absolute;
+    color: $light-gray;
+    transition: 0.2s all;
+  }
+
+  &:after {
+    content: "}";
+    top: 5px;
+    right: 8px;
+  }
+  &:before {
+    content: "{";
+      top: 5px;
+      left: 8px;
+  }
+
+  &:hover {
+
+    &:before, &:after {
+      color: $dark-gray;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+
+  &:active {
+    color: $dark-gray;
+  }
+}
