@@ -1,13 +1,14 @@
 button {
   box-sizing: border-box;
-  margin: 8px;
   padding: 8px 16px;
+  margin: 8px;
   border: none;
   text-transform: uppercase;
   background-color: transparent;
   font-weight: bold;
   font-size: 12px;
   position: relative;
+  color: $light-gray;
 
   &:hover {
     cursor: pointer;
@@ -22,7 +23,6 @@ button {
   border-bottom: 2px solid $light-gray;
   border-top: 2px solid $light-gray;
   transition: 0.2s all;
-  color: $light-gray;
 
   &:after, &:before {
     content: "";
@@ -60,7 +60,6 @@ button {
 }
 
 .brace-button {
-  color: $light-gray;
   transition: 0.2s all;
 
   &:before, &:after {
@@ -93,6 +92,47 @@ button {
 
     &:after {
       right: 0;
+    }
+  }
+
+  &:active {
+    color: $dark-gray;
+  }
+}
+
+.bracket-button {
+  border: 2px solid $light-gray;
+  padding: 4px 16px;
+  margin: 12px 8px;
+  transition: 0.2s all linear;
+
+  &:before, &:after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: 0.2s all linear;
+  }
+
+  &:before {
+    top: 4px;
+    left: -2px;
+  }
+
+  &:after {
+    top: 4px;
+    right: -2px;
+  }
+
+  &:hover {
+    margin: 8px;
+    padding: 8px 16px;
+    border-color: $dark-gray;
+
+    &:before, &:after {
+      height: 24px;
     }
   }
 

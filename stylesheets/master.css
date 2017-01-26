@@ -149,14 +149,15 @@ pre {
 
 button {
   box-sizing: border-box;
-  margin: 8px;
   padding: 8px 16px;
+  margin: 8px;
   border: none;
   text-transform: uppercase;
   background-color: transparent;
   font-weight: bold;
   font-size: 12px;
-  position: relative; }
+  position: relative;
+  color: #999; }
   button:hover {
     cursor: pointer; }
   button:focus {
@@ -165,8 +166,7 @@ button {
 .box-button {
   border-bottom: 2px solid #999;
   border-top: 2px solid #999;
-  transition: 0.2s all;
-  color: #999; }
+  transition: 0.2s all; }
   .box-button:after, .box-button:before {
     content: "";
     width: 2px;
@@ -191,7 +191,6 @@ button {
     background-color: #CCC; }
 
 .brace-button {
-  color: #999;
   transition: 0.2s all; }
   .brace-button:before, .brace-button:after {
     font-size: 16px;
@@ -213,6 +212,34 @@ button {
   .brace-button:hover:after {
     right: 0; }
   .brace-button:active {
+    color: #333; }
+
+.bracket-button {
+  border: 2px solid #999;
+  padding: 4px 16px;
+  margin: 12px 8px;
+  transition: 0.2s all linear; }
+  .bracket-button:before, .bracket-button:after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: 0.2s all linear; }
+  .bracket-button:before {
+    top: 4px;
+    left: -2px; }
+  .bracket-button:after {
+    top: 4px;
+    right: -2px; }
+  .bracket-button:hover {
+    margin: 8px;
+    padding: 8px 16px;
+    border-color: #333; }
+    .bracket-button:hover:before, .bracket-button:hover:after {
+      height: 24px; }
+  .bracket-button:active {
     color: #333; }
 
 input[type="text"], input[type="password"] {
@@ -254,6 +281,51 @@ label {
     left: 8px;
     font-size: 12px;
     color: #999; }
+
+textarea {
+  display: block;
+  border: 2px solid #999;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.2s all;
+  position: relative;
+  margin: 8px; }
+  textarea:before {
+    content: attr(name);
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 50px;
+    width: auto;
+    top: 0;
+    left: 0;
+    color: #999;
+    background-color: white; }
+  textarea:hover {
+    border-color: #333; }
+  textarea:focus {
+    outline: none;
+    border-color: #333; }
+
+a {
+  text-decoration: none;
+  position: relative; }
+  a:before, a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: blue;
+    top: 18px;
+    transition: 0.2s all; }
+  a:before {
+    left: 50%; }
+  a:after {
+    right: 50%; }
+  a:hover:before, a:hover:after {
+    width: 50%; }
 
 .grid-demo {
   width: 600px;

@@ -44,3 +44,36 @@ label {
   position: relative;
   display: block;
 }
+
+textarea {
+  display: block;
+  border: 2px solid $light-gray;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.2s all;
+  position: relative;
+  margin: 8px;
+
+  &:before {
+    content: attr(name);
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 50px;
+    width: auto;
+    top: 0;
+    left: 0;
+    color: $light-gray;
+    background-color: white;
+  }
+
+  &:hover {
+    border-color: $dark-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $dark-gray;
+  }
+}
