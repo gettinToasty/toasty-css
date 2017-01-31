@@ -45,17 +45,17 @@ nav.tabs {
       display: block;
       position: absolute;
       border-bottom: 1px solid $light-gray;
-      width: 2px;
+      width: 4px;
       top: 44px;
       bottom: -100px;
     }
 
     &:before {
-      left: -2px;
+      left: -4px;
     }
 
     &:after {
-      right: -2px;
+      right: -4px;
     }
 
     &:hover {
