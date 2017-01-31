@@ -147,7 +147,7 @@ pre {
     border: 2px solid #333;
     font-size: 16px; }
 
-button {
+button, .link-button {
   box-sizing: border-box;
   padding: 8px 16px;
   margin: 8px;
@@ -158,9 +158,9 @@ button {
   font-size: 12px;
   position: relative;
   color: #999; }
-  button:hover {
+  button:hover, .link-button:hover {
     cursor: pointer; }
-  button:focus {
+  button:focus, .link-button:focus {
     outline: none; }
 
 .box-button {
