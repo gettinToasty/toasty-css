@@ -17,9 +17,58 @@ nav.row {
       }
     }
 
+    &:focus {
+      color: $dark-gray;
+    }
+
   }
 }
 
-.tabs {
-  
+nav.tabs {
+  border: none;
+  justify-content: flex-start;
+
+  a {
+    border: 1px solid $light-gray;
+    border-radius: 4px 4px 0 0;
+    padding: 14px;
+    background-color: $lighter-gray;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+
+    &:before, &:after {
+      background-color: transparent;
+      box-sizing: border-box;
+      content: "";
+      display: block;
+      position: absolute;
+      border-bottom: 1px solid $light-gray;
+      width: 2px;
+      top: 44px;
+      bottom: -100px;
+    }
+
+    &:before {
+      left: -2px;
+    }
+
+    &:after {
+      right: -2px;
+    }
+
+    &:hover {
+      background-color: white;
+
+      &:before, &:after {
+        display: block;
+      }
+    }
+
+    &:focus {
+      border-bottom: 1px solid white;
+      background-color: white;
+    }
+  }
 }

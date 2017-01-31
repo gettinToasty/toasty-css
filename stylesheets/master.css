@@ -378,5 +378,41 @@ nav.row {
       color: #333; }
       nav.row a:hover:before, nav.row a:hover:after {
         display: none; }
+    nav.row a:focus {
+      color: #333; }
+
+nav.tabs {
+  border: none;
+  justify-content: flex-start; }
+  nav.tabs a {
+    border: 1px solid #999;
+    border-radius: 4px 4px 0 0;
+    padding: 14px;
+    background-color: #CCC;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center; }
+    nav.tabs a:before, nav.tabs a:after {
+      background-color: transparent;
+      box-sizing: border-box;
+      content: "";
+      display: block;
+      position: absolute;
+      border-bottom: 1px solid #999;
+      width: 2px;
+      top: 44px;
+      bottom: -100px; }
+    nav.tabs a:before {
+      left: -2px; }
+    nav.tabs a:after {
+      right: -2px; }
+    nav.tabs a:hover {
+      background-color: white; }
+      nav.tabs a:hover:before, nav.tabs a:hover:after {
+        display: block; }
+    nav.tabs a:focus {
+      border-bottom: 1px solid white;
+      background-color: white; }
 
 /*# sourceMappingURL=master.css.map */
