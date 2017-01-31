@@ -157,13 +157,19 @@ button, .link-button {
   font-weight: bold;
   font-size: 12px;
   position: relative;
-  color: #999; }
+  color: #999;
+  border: 2px solid #999;
+  transition: 0.2s all; }
   button:hover, .link-button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    border: 2px solid #333; }
+  button:active, .link-button:active {
+    color: #333; }
   button:focus, .link-button:focus {
     outline: none; }
 
 .box-button {
+  border: none;
   border-bottom: 2px solid #999;
   border-top: 2px solid #999;
   transition: 0.2s all; }
@@ -182,8 +188,10 @@ button, .link-button {
     right: 0;
     bottom: 0; }
   .box-button:hover {
+    border: none;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
     cursor: pointer;
-    border-color: #333;
     color: #333; }
     .box-button:hover:after, .box-button:hover:before {
       height: 100%; }
@@ -191,7 +199,8 @@ button, .link-button {
     background-color: #CCC; }
 
 .brace-button {
-  transition: 0.2s all; }
+  transition: 0.2s all;
+  border: none; }
   .brace-button:before, .brace-button:after {
     font-size: 16px;
     position: absolute;
@@ -205,17 +214,18 @@ button, .link-button {
     content: "{";
     top: 5px;
     left: 8px; }
-  .brace-button:hover:before, .brace-button:hover:after {
-    color: #333; }
-  .brace-button:hover:before {
-    left: 0; }
-  .brace-button:hover:after {
-    right: 0; }
+  .brace-button:hover {
+    border: none; }
+    .brace-button:hover:before, .brace-button:hover:after {
+      color: #333; }
+    .brace-button:hover:before {
+      left: 0; }
+    .brace-button:hover:after {
+      right: 0; }
   .brace-button:active {
     color: #333; }
 
 .bracket-button {
-  border: 2px solid #999;
   padding: 4px 16px;
   margin: 12px 8px;
   transition: 0.2s all linear; }
