@@ -370,6 +370,8 @@ nav.row {
   height: auto;
   border-bottom: 1px solid #CCC;
   border-top: 1px solid #CCC; }
+  nav.row button {
+    margin: 0; }
   nav.row a {
     color: #999;
     text-transform: uppercase;

@@ -4,6 +4,10 @@ nav.row {
   border-bottom: 1px solid $lighter-gray;
   border-top: 1px solid $lighter-gray;
 
+  button {
+    margin: 0;
+  }
+
   a {
     color: $light-gray;
     text-transform: uppercase;
