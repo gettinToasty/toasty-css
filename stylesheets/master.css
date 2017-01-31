@@ -365,4 +365,18 @@ a {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+nav.row {
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC; }
+  nav.row a {
+    color: #999;
+    text-transform: uppercase;
+    transition: 0.2s all; }
+    nav.row a:hover {
+      color: #333; }
+      nav.row a:hover:before, nav.row a:hover:after {
+        display: none; }
+
 /*# sourceMappingURL=master.css.map */

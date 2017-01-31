@@ -1,0 +1,21 @@
+nav.row {
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid $lighter-gray;
+  border-top: 1px solid $lighter-gray;
+
+  a {
+    color: $light-gray;
+    text-transform: uppercase;
+    transition: 0.2s all;
+
+    &:hover {
+      color: $dark-gray;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+
+  }
+}
