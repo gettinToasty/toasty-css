@@ -10,7 +10,7 @@ button, .link-button {
   position: relative;
   color: $light-gray;
   border: 2px solid $light-gray;
-  transition: 0.2s all;
+  transition: all 0.2s;
 
   &:hover {
     cursor: pointer;
@@ -30,7 +30,6 @@ button, .link-button {
   border: none;
   border-bottom: 2px solid $light-gray;
   border-top: 2px solid $light-gray;
-  transition: 0.2s all;
 
   &:after, &:before {
     content: "";
@@ -39,7 +38,7 @@ button, .link-button {
     position: absolute;
     display: block;
     background-color: $dark-gray;
-    transition: 0.2s all;
+    transition: all 0.2s;
   }
 
   &:before {
@@ -70,14 +69,13 @@ button, .link-button {
 }
 
 .brace-button {
-  transition: 0.2s all;
   border: none;
 
   &:before, &:after {
     font-size: 16px;
     position: absolute;
     color: $light-gray;
-    transition: 0.2s all;
+    transition: all 0.2s;
   }
 
   &:after {
@@ -104,46 +102,6 @@ button, .link-button {
 
     &:after {
       right: 0;
-    }
-  }
-
-  &:active {
-    color: $dark-gray;
-  }
-}
-
-.bracket-button {
-  padding: 4px 16px;
-  margin: 12px 8px;
-  transition: 0.2s all linear;
-
-  &:before, &:after {
-    content: "";
-    width: 2px;
-    height: 16px;
-    background-color: white;
-    display: block;
-    position: absolute;
-    transition: 0.2s all linear;
-  }
-
-  &:before {
-    top: 4px;
-    left: -2px;
-  }
-
-  &:after {
-    top: 4px;
-    right: -2px;
-  }
-
-  &:hover {
-    margin: 8px;
-    padding: 8px 16px;
-    border-color: $dark-gray;
-
-    &:before, &:after {
-      height: 24px;
     }
   }
 

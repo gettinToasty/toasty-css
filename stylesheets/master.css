@@ -143,7 +143,7 @@ button, .link-button {
   position: relative;
   color: #999;
   border: 2px solid #999;
-  transition: 0.2s all; }
+  transition: all 0.2s; }
   button:hover, .link-button:hover {
     cursor: pointer;
     border: 2px solid #333; }
@@ -155,8 +155,7 @@ button, .link-button {
 .box-button {
   border: none;
   border-bottom: 2px solid #999;
-  border-top: 2px solid #999;
-  transition: 0.2s all; }
+  border-top: 2px solid #999; }
   .box-button:after, .box-button:before {
     content: "";
     width: 2px;
@@ -164,7 +163,7 @@ button, .link-button {
     position: absolute;
     display: block;
     background-color: #333;
-    transition: 0.2s all; }
+    transition: all 0.2s; }
   .box-button:before {
     left: 0;
     top: 0; }
@@ -183,13 +182,12 @@ button, .link-button {
     background-color: #CCC; }
 
 .brace-button {
-  transition: 0.2s all;
   border: none; }
   .brace-button:before, .brace-button:after {
     font-size: 16px;
     position: absolute;
     color: #999;
-    transition: 0.2s all; }
+    transition: all 0.2s; }
   .brace-button:after {
     content: "}";
     top: 5px;
@@ -207,33 +205,6 @@ button, .link-button {
     .brace-button:hover:after {
       right: 0; }
   .brace-button:active {
-    color: #333; }
-
-.bracket-button {
-  padding: 4px 16px;
-  margin: 12px 8px;
-  transition: 0.2s all linear; }
-  .bracket-button:before, .bracket-button:after {
-    content: "";
-    width: 2px;
-    height: 16px;
-    background-color: white;
-    display: block;
-    position: absolute;
-    transition: 0.2s all linear; }
-  .bracket-button:before {
-    top: 4px;
-    left: -2px; }
-  .bracket-button:after {
-    top: 4px;
-    right: -2px; }
-  .bracket-button:hover {
-    margin: 8px;
-    padding: 8px 16px;
-    border-color: #333; }
-    .bracket-button:hover:before, .bracket-button:hover:after {
-      height: 24px; }
-  .bracket-button:active {
     color: #333; }
 
 input[type="text"], input[type="password"] {
@@ -361,6 +332,10 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.heirarchy {
+  border: 1px solid #CCC;
+  padding: 16px; }
 
 pre {
   box-sizing: border-box;

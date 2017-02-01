@@ -57,6 +57,11 @@
   }
 }
 
+.heirarchy {
+  border: 1px solid $lighter-gray;
+  padding: 16px;
+}
+
 pre {
   &:before {
     content: "Example Code";
