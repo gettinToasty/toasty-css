@@ -40,11 +40,14 @@
 }
 
 .grid-content, .components-content, .typography-content, .customization-content {
+  box-sizing: border-box;
   height: 100vh;
   overflow-y: auto;
+  padding-top: 100px;
 }
 
 #grid, #components, #typography, #customization {
+  box-sizing: border-box;
   position: relative;
   background-color: $gray;
   color: white;
@@ -55,6 +58,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background-color: white;
 }
 
 .heirarchy {
