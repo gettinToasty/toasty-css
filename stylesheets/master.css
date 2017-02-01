@@ -361,6 +361,8 @@ a {
     .icons i:hover {
       color: #333;
       cursor: pointer; }
+  .icons a:hover:before, .icons a:hover:after {
+    display: none; }
 
 .grid-content, .components-content, .typography-content {
   height: 100vh;

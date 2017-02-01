@@ -29,6 +29,14 @@
       cursor: pointer;
     }
   }
+
+  a {
+    &:hover {
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
 }
 
 .grid-content, .components-content, .typography-content {
