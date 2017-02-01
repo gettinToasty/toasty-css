@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,600,600i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -99,28 +99,51 @@ table {
 h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, div {
   font-family: "Open Sans", sans-serif; }
 
+h1, h2, h3, h4 {
+  margin-bottom: 16px;
+  line-height: normal; }
+
+body, p {
+  font-size: 16px;
+  line-height: 24px; }
+
 header {
   padding: 16px 0; }
 
 h1 {
-  font-size: 60px;
+  font-size: 56px;
   letter-spacing: 8px;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 48px;
-  margin: 16px; }
+  font-size: 40px;
+  margin-left: 16px;
+  font-weight: 600; }
 
 h3 {
   text-transform: uppercase;
   font-size: 32px;
-  margin-bottom: 16px; }
+  font-weight: 300; }
+
+h4 {
+  font-weight: 700; }
+
+h5 {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600; }
 
 p {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 24px; }
+  margin-left: 16px; }
 
 nav.row {
   text-align: center; }

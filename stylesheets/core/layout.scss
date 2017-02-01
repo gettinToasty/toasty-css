@@ -2,32 +2,60 @@ h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, div {
   font-family: $sans;
 }
 
+h1, h2, h3, h4 {
+  margin-bottom: 16px;
+  line-height: normal;
+}
+
+body, p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 header {
   padding: 16px 0;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 56px;
   letter-spacing: 8px;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 48px;
-  margin: 16px;
+  font-size: 40px;
+  margin-left: 16px;
+  font-weight: 600;
 }
 
 h3 {
   text-transform: uppercase;
   font-size: 32px;
+  font-weight: 300;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h5 {
   margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 p {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 24px;
+  margin-left: 16px;
 }
 
 nav.row {
