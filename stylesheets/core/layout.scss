@@ -34,28 +34,10 @@ nav.row {
   text-align: center;
 }
 
-pre {
-  &:before {
-    content: "Example Code";
-    position: absolute;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    background-color: $lighter-gray;
-    color: $black;
-    width: 100%;
-    padding: 8px 0 8px 32px;
-    border-radius: 16px 16px 0 0;
-    border: 2px solid $dark-gray;
-    font-size: 16px;
-  }
-  box-sizing: border-box;
-  margin: 16px 32px;
-  position: relative;
-  padding: 16px;
-  padding-top: 48px;
-  font-family: monospace;
-  border-radius: 16px;
-  background-color: $dark-gray;
-  color: $lighter-gray;
+.serif {
+  font-family: $serif;
+}
+
+.monospace, pre, code {
+  font-family: $monospace;
 }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -124,29 +125,11 @@ p {
 nav.row {
   text-align: center; }
 
-pre {
-  box-sizing: border-box;
-  margin: 16px 32px;
-  position: relative;
-  padding: 16px;
-  padding-top: 48px;
-  font-family: monospace;
-  border-radius: 16px;
-  background-color: #333;
-  color: #CCC; }
-  pre:before {
-    content: "Example Code";
-    position: absolute;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    background-color: #CCC;
-    color: #000;
-    width: 100%;
-    padding: 8px 0 8px 32px;
-    border-radius: 16px 16px 0 0;
-    border: 2px solid #333;
-    font-size: 16px; }
+.serif {
+  font-family: "Cormorant Garamond", serif; }
+
+.monospace, pre, code {
+  font-family: "Anonymous Pro", monospace; }
 
 button, .link-button {
   box-sizing: border-box;
@@ -364,20 +347,43 @@ a {
   .icons a:hover:before, .icons a:hover:after {
     display: none; }
 
-.grid-content, .components-content, .typography-content {
+.grid-content, .components-content, .typography-content, .customization-content {
   height: 100vh;
   overflow-y: auto; }
 
-.grid-description, .components-description, .typography-description {
+#grid, #components, #typography, #customization {
   position: relative;
   background-color: #666;
   color: white;
   height: 100vh; }
-  .grid-description div, .components-description div, .typography-description div {
+  #grid div, #components div, #typography div, #customization div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+pre {
+  box-sizing: border-box;
+  margin: 16px 32px;
+  position: relative;
+  padding: 16px;
+  padding-top: 48px;
+  border-radius: 16px;
+  background-color: #333;
+  color: #CCC; }
+  pre:before {
+    content: "Example Code";
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background-color: #CCC;
+    color: #000;
+    width: 100%;
+    padding: 8px 0 8px 32px;
+    border-radius: 16px 16px 0 0;
+    border: 2px solid #333;
+    font-size: 16px; }
 
 nav.row {
   align-items: center;

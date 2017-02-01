@@ -39,12 +39,12 @@
   }
 }
 
-.grid-content, .components-content, .typography-content {
+.grid-content, .components-content, .typography-content, .customization-content {
   height: 100vh;
   overflow-y: auto;
 }
 
-.grid-description, .components-description, .typography-description {
+#grid, #components, #typography, #customization {
   position: relative;
   background-color: $gray;
   color: white;
@@ -55,4 +55,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+pre {
+  &:before {
+    content: "Example Code";
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background-color: $lighter-gray;
+    color: $black;
+    width: 100%;
+    padding: 8px 0 8px 32px;
+    border-radius: 16px 16px 0 0;
+    border: 2px solid $dark-gray;
+    font-size: 16px;
+  }
+  box-sizing: border-box;
+  margin: 16px 32px;
+  position: relative;
+  padding: 16px;
+  padding-top: 48px;
+  border-radius: 16px;
+  background-color: $dark-gray;
+  color: $lighter-gray;
 }
