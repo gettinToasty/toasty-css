@@ -15,6 +15,22 @@
   }
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+
+  i {
+    margin: 16px;
+    color: $light-gray;
+    transition: 0.2s all;
+
+    &:hover {
+      color: $dark-gray;
+      cursor: pointer;
+    }
+  }
+}
+
 .grid-content, .components-content, .typography-content {
   height: 100vh;
   overflow-y: auto;
