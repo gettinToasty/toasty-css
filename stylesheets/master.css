@@ -350,16 +350,16 @@ a {
     outline: 2px solid white;
     text-align: center; }
 
-.grid-content, .components-content {
+.grid-content, .components-content, .typography-content {
   height: 100vh;
   overflow-y: auto; }
 
-.grid-description, .components-description {
+.grid-description, .components-description, .typography-description {
   position: relative;
   background-color: #666;
   color: white;
   height: 100vh; }
-  .grid-description div, .components-description div {
+  .grid-description div, .components-description div, .typography-description div {
     position: absolute;
     top: 50%;
     left: 50%;
