@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="./stylesheets/master.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/script.js">
-
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/stickem.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.container').stickem();
+      });
     </script>
 
   </head>
@@ -41,8 +45,9 @@
         <a href="#customization">Customization</a>
       </div>
     </nav>
-    <div class="container container-r">
-      <div class="row stickem-container">
+    <div class="container">
+
+      <div class="row right stickem-container">
 
         <section class="col-1-2 stickem" id="grid">
           <div>
@@ -124,10 +129,7 @@
         </section>
       </div>
 
-    </div>
-
-    <div class="container">
-      <div class="row sitckem-container">
+      <div class="row left stickem-container">
 
         <section class="components-content col-1-2">
           <h3>
@@ -208,10 +210,8 @@
           </div>
         </section>
       </div>
-    </div>
 
-    <div class="container container-r">
-      <div class="row stickem-container">
+      <div class="row right stickem-container">
 
         <section class="col-1-2 stickem" id="typography">
           <div>
@@ -250,10 +250,8 @@
           </div>
         </section>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row stickem-container">
+      <div class="row left stickem-container">
         <section class="customization-content col-1-2">
 
         </section>
@@ -270,16 +268,5 @@
 
     </div>
 
-
-
-
-
-
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.container').stickem();
-      });
-    </script>
   </body>
 </html>
