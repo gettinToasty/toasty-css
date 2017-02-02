@@ -41,87 +41,89 @@
         <a href="#customization">Customization</a>
       </div>
     </nav>
+    <div class="container">
+      <div class="row stickem-container">
 
-    <div class="row">
+        <section class="col-1-2 stickem" id="grid">
+          <div>
+            <h2>The Grid</h2>
+            <p>
+              The grid is a system designed on CSS3's flexbox framework to make layouts effortless and easy.
+            </p>
+          </div>
+        </section>
 
-      <section class="col-1-2" id="grid">
-        <div>
-          <h2>The Grid</h2>
+        <section class="grid-content col-1-2">
+          <h3>Sample Grid</h3>
+
+          <div class="grid-demo">
+            <div class="row">
+              <div class="col-1-1">
+                col-1-1
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1-2">
+                col-1-2
+              </div>
+              <div class="col-1-2">
+                col-1-2
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1-8">
+                col-1-8
+              </div>
+              <div class="col-1-8">
+                col-1-8
+              </div>
+              <div class="col-3-4">
+                col-3-4
+              </div>
+            </div>
+          </div>
+
           <p>
-            The grid is a system designed on CSS3's flexbox framework to make layouts effortless and easy.
+            The Grid uses responsive design principles and mathematical proportions to ensure a nice looking layout no matter your screen size. Each Grid is composed of two primary elements: rows and columns. Rows function as containing elements in which columns are inserted.
           </p>
-        </div>
-      </section>
 
-      <section class="grid-content col-1-2">
-        <h3>Sample Grid</h3>
+          <p>
+            The Grid can be implemented using dividers such as div's with appropriate class names, as shown below:
+          </p>
 
-        <div class="grid-demo">
-          <div class="row">
-            <div class="col-1-1">
-              col-1-1
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-1-2">
-              col-1-2
-            </div>
-            <div class="col-1-2">
-              col-1-2
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-1-8">
-              col-1-8
-            </div>
-            <div class="col-1-8">
-              col-1-8
-            </div>
-            <div class="col-3-4">
-              col-3-4
-            </div>
-          </div>
-        </div>
-
-        <p>
-          The Grid uses responsive design principles and mathematical proportions to ensure a nice looking layout no matter your screen size. Each Grid is composed of two primary elements: rows and columns. Rows function as containing elements in which columns are inserted.
-        </p>
-
-        <p>
-          The Grid can be implemented using dividers such as div's with appropriate class names, as shown below:
-        </p>
-
-        <pre>
-  &lt;div class='row'&gt;
-    &lt;div class='col-1-2'&gt;
-      Content goes here
-    &lt;/div&gt;
-    &lt;div class='col-1-2'&gt;
-      More content goes here
-    &lt;/div&gt;
-  &lt;/div&gt;
-        </pre>
-
-        <p>
-          The above code would look a little something like this:
-        </p>
-
-        <div class="grid-demo row">
-          <div class="col-1-2">
+          <pre>
+            &lt;div class='row'&gt;
+            &lt;div class='col-1-2'&gt;
             Content goes here
-          </div>
-          <div class="col-1-2">
+            &lt;/div&gt;
+            &lt;div class='col-1-2'&gt;
             More content goes here
+            &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+
+          <p>
+            The above code would look a little something like this:
+          </p>
+
+          <div class="grid-demo row">
+            <div class="col-1-2">
+              Content goes here
+            </div>
+            <div class="col-1-2">
+              More content goes here
+            </div>
           </div>
-        </div>
 
-        <p>
-          Numbers in the col elements' class names represent the proportion of space they take up. The Grid supports proportions on a 1/8 scale of granularity, meaning you can have 1/8 elements, 1/4 elements, 1/2 elements, and increments of those numbers. A col with 1-1 will take up 100% of the row.
-        </p>
+          <p>
+            Numbers in the col elements' class names represent the proportion of space they take up. The Grid supports proportions on a 1/8 scale of granularity, meaning you can have 1/8 elements, 1/4 elements, 1/2 elements, and increments of those numbers. A col with 1-1 will take up 100% of the row.
+          </p>
 
-      </section>
+        </section>
+      </div>
+
     </div>
 
     <div class="row">
@@ -263,5 +265,13 @@
 
 
 
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.container').stickem();
+      });
+    </script>
   </body>
 </html>

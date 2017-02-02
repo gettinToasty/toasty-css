@@ -2,7 +2,7 @@
   width: 600px;
   margin: 0 auto 16px auto;
   height: auto;
-  overflow: auto;
+  overflow: none;
   position:relative;
 
   .row {
@@ -41,14 +41,13 @@
 
 .grid-content, .components-content, .typography-content, .customization-content {
   box-sizing: border-box;
-  height: 100vh;
-  overflow-y: auto;
+  height: auto;
   padding-top: 100px;
+  width: 50%;
 }
 
 #grid, #components, #typography, #customization {
   box-sizing: border-box;
-  position: relative;
   background-color: $gray;
   color: white;
   height: 100vh;
@@ -58,6 +57,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+section {
+  position: relative;
+}
+
+.stickem-container {
+  position: relative;
+}
+
+.stickit {
+  position: fixed;
+  top: 0;
+  width: 50%;
+}
+
+.stickit-end {
+  bottom: 0;
+  position: absolute;
+  width: 50%;
 }
 
 #sticky.stick {
