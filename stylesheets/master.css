@@ -478,7 +478,7 @@ nav.tabs {
       position: absolute;
       border-bottom: 1px solid #999;
       width: 4px;
-      top: 44px;
+      top: 52px;
       bottom: -100px; }
     nav.tabs a:before {
       left: -4px; }
