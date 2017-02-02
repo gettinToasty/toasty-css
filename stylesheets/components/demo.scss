@@ -43,7 +43,7 @@
   box-sizing: border-box;
   height: auto;
   padding-top: 100px;
-  width: 50%;
+  flex-grow: 0;
 }
 
 #grid, #components, #typography, #customization {
@@ -59,6 +59,12 @@
   }
 }
 
+.container-r {
+  .row {
+    justify-content: flex-end;
+  }
+}
+
 section {
   position: relative;
 }
@@ -70,12 +76,14 @@ section {
 .stickit {
   position: fixed;
   top: 0;
+  left: 0;
   width: 50%;
 }
 
 .stickit-end {
   bottom: 0;
   position: absolute;
+  left: 0;
   width: 50%;
 }
 
