@@ -52,4 +52,7 @@ If your content fills beyond the constraints of your chosen column, no worry! Fl
 
 There are a few other goodies for users of The Grid, as well. If you want an element to remain at specific width no matter what, simply add the `fixed` class after the column name. You can also add `left` or `right` classes to your rows to justify the columns of a non-filled row to either side of the page.
 
+### Components
+
+
 ## Future Development
