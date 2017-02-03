@@ -46,6 +46,10 @@ The Grid dynamically handles resizing the window and includes break points to re
   </div>
 </div>
 ```
-Columns in The Grid function as proportions of eight (a common theme of the Toasty CSS design principles), supporting columns of sizes up to 1/1 (100% of the page) down to 1/8 (12.5% of the page), and everything in between.
+Columns in The Grid function as proportions of eight (a common theme of the Toasty CSS design principles), supporting columns of sizes up to 1/1 (100% of the page) down to 1/8 (12.5% of the page), and everything in between. Naming convention for columns follows this proportional model, with class names being flexible in how you name them (`col-1-1` is equal to `col-2-2` is equal to `col-8-8`) for maximum ease-of-use.
+
+If your content fills beyond the constraints of your chosen column, no worry! Flexbox will automatically adjust the dimensions of that and it's neighboring columns to display what you need. Likewise, if you build a row that contains proportions less or more than 100% of the space flexbox will constrict or expand those elements in the row accordingly.
+
+There are a few other goodies for users of The Grid, as well. If you want an element to remain at specific width no matter what, simply add the `fixed` class after the column name. You can also add `left` or `right` classes to your rows to justify the columns of a non-filled row to either side of the page.
 
 ## Future Development
