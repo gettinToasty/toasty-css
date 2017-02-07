@@ -1,4 +1,4 @@
-##Full Component List
+## Full Component List
 
 | Component | Class Name | HTML Element | Preview |
 |---|:---:|:---:|---|

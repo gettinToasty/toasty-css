@@ -1,0 +1,19 @@
+.dark, input.dark {
+  color: $gray;
+  border-color: $gray;
+  &:hover {
+    border-color: $lighter-gray;
+    color: $lighter-gray;
+  }
+}
+
+input.dark {
+  z-index: 2;
+}
+
+label.dark {
+  &:before {
+    color: $gray;
+    z-index: 1;
+  }
+}

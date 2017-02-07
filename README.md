@@ -53,8 +53,13 @@ If your content fills beyond the constraints of your chosen column, no worry! Fl
 There are a few other goodies for users of The Grid, as well. If you want an element to remain at specific width no matter what, simply add the `fixed` class after the column name. You can also add `left` or `right` classes to your rows to justify the columns of a non-filled row to either side of the page.
 
 ### Components
-Toasty CSS provides a healthy library of prebuilt components right out of the box. The full component list is [here](./docs/class_documentation.md), and it covers everything from form inputs to buttons to navigation.
+Toasty CSS provides a healthy library of prebuilt components right out of the box. The full component list is [here](./docs/class_documentation.md), and it covers everything from form inputs to buttons to navigation. Seeing is believing so here is an idea of what the Toasty styling library will give you:
+
 
 ### Typography
+Toasty CSS has selected a few fonts to make everything consistent in your web application
+
+### User customization
+
 
 ## Future Development

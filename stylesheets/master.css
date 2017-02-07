@@ -450,6 +450,10 @@ pre.snippet {
     padding: 8px 0 8px 32px;
     font-size: 16px; }
 
+.black {
+  background-color: black;
+  padding: 16px; }
+
 nav.row {
   align-items: center;
   height: auto;
@@ -501,6 +505,20 @@ nav.tabs {
     nav.tabs a:focus {
       border-bottom: 1px solid white;
       background-color: white; }
+
+.dark, input.dark {
+  color: #666;
+  border-color: #666; }
+  .dark:hover, input.dark:hover {
+    border-color: #CCC;
+    color: #CCC; }
+
+input.dark {
+  z-index: 2; }
+
+label.dark:before {
+  color: #666;
+  z-index: 1; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
