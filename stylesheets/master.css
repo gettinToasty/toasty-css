@@ -522,6 +522,8 @@ h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
 
 input.dark {
   z-index: 2; }
+  input.dark:focus {
+    border-color: #CCC; }
 
 label.dark:before {
   color: #666;
