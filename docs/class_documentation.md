@@ -1,5 +1,5 @@
 | Component | Class Name | HTML Element | Preview |
-|---|---|---|
+|---|:---:|:---:|---|
 | Row | row | div/section/nav/header/ul | Coming Soon |
 | 100% Column | col-1-1 | div/section/li | Coming Soon |
 | 7/8 Column | col-7-8 | div/section/li |  Coming Soon |
