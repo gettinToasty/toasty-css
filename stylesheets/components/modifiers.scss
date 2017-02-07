@@ -1,10 +1,22 @@
-.dark, input.dark {
+.dark, input.dark, nav.row a.dark {
   color: $gray;
   border-color: $gray;
   &:hover {
     border-color: $lighter-gray;
+  }
+  &:active {
     color: $lighter-gray;
   }
+}
+
+nav.row a.dark {
+  &:hover, &:focus {
+    color: $lighter-gray;
+  }
+}
+
+h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
+  color: $lighter-gray;
 }
 
 input.dark {

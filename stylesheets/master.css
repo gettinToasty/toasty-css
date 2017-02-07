@@ -506,12 +506,19 @@ nav.tabs {
       border-bottom: 1px solid white;
       background-color: white; }
 
-.dark, input.dark {
+.dark, input.dark, nav.row a.dark {
   color: #666;
   border-color: #666; }
-  .dark:hover, input.dark:hover {
-    border-color: #CCC;
+  .dark:hover, input.dark:hover, nav.row a.dark:hover {
+    border-color: #CCC; }
+  .dark:active, input.dark:active, nav.row a.dark:active {
     color: #CCC; }
+
+nav.row a.dark:hover, nav.row a.dark:focus {
+  color: #CCC; }
+
+h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
+  color: #CCC; }
 
 input.dark {
   z-index: 2; }
