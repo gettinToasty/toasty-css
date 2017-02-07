@@ -147,7 +147,7 @@ pre.snippet {
     left: 0;
     background-color: $lighter-gray;
     color: $black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $gray;
     width: 100%;
     padding: 8px 0 8px 32px;
     font-size: 16px;
@@ -158,6 +158,6 @@ pre.snippet {
   padding: 16px;
   padding-top: 48px;
   background-color: white;
-  color: $light-gray;
-  border: 1px solid black;
+  color: $gray;
+  border: 1px solid $gray;
 }
