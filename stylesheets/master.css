@@ -517,7 +517,18 @@ nav.tabs {
 nav.row.dark {
   border-color: #666; }
 
-nav.row a.dark:hover, nav.row a.dark:focus {
+nav.row a.dark {
+  background-color: transparent; }
+  nav.row a.dark:before, nav.row a.dark:after {
+    border-color: #666; }
+  nav.row a.dark:hover, nav.row a.dark:focus {
+    color: #CCC; }
+
+nav.row.tabs a.dark:hover {
+  background-color: #333;
+  border-color: #666; }
+nav.row.tabs a.dark:focus {
+  border-bottom: 1px solid transparent;
   color: #CCC; }
 
 h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {

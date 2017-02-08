@@ -14,9 +14,26 @@ nav.row.dark {
   border-color: $gray;
 }
 
-
 nav.row a.dark {
+  background-color: transparent;
+
+  &:before, &:after {
+    border-color: $gray;
+  }
+
   &:hover, &:focus {
+    color: $lighter-gray;
+  }
+}
+
+nav.row.tabs a.dark {
+  &:hover {
+    background-color: $dark-gray;
+    border-color: $gray;
+  }
+
+  &:focus {
+    border-bottom: 1px solid transparent;
     color: $lighter-gray;
   }
 }
