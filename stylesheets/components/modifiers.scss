@@ -20,7 +20,7 @@ h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
   color: $lighter-gray;
 }
 
-input.dark {
+input[type="text"].dark {
   z-index: 2;
   &:focus {
     border-color: $lighter-gray;
