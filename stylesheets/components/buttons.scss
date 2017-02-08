@@ -15,6 +15,10 @@ button, .link-button {
   &:hover {
     cursor: pointer;
     border: 2px solid $dark-gray;
+
+    &:before, &:after {
+      display: none;
+    }
   }
 
   &:active {

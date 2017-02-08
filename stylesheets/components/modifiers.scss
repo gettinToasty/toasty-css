@@ -82,3 +82,39 @@ button.dark {
     background-color: $dark-gray;
   }
 }
+
+button.lg {
+  font-size: 16px;
+  padding: 16px 32px;
+  border-width: 4px;
+}
+
+button.sm {
+  font-size: 8px;
+  padding: 8px 16px;
+  border-width: 2px;
+}
+
+h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
+  color: $light-gray;
+}
+
+h1.sm {
+  font-size: 48px;
+}
+
+h2.sm {
+  font-size: 32px;
+}
+
+h3.sm {
+  font-size: 24px;
+}
+
+h4.sm, h5.sm {
+  font-size: 12px;
+}
+
+h6.sm {
+  font-size: 8px;
+}

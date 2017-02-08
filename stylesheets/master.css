@@ -107,7 +107,8 @@ h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, div {
   font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
   line-height: normal; }
 
 h6 {
@@ -178,6 +179,8 @@ button, .link-button {
   button:hover, .link-button:hover {
     cursor: pointer;
     border: 2px solid #333; }
+    button:hover:before, button:hover:after, .link-button:hover:before, .link-button:hover:after {
+      display: none; }
   button:active, .link-button:active {
     color: #333; }
   button:focus, .link-button:focus {
@@ -452,7 +455,8 @@ pre.snippet {
 
 .black {
   background-color: black;
-  padding: 16px; }
+  padding: 16px;
+  margin-bottom: 16px; }
 
 nav.row {
   align-items: center;
@@ -555,6 +559,34 @@ button.dark:hover:before, button.dark:hover:after {
   color: #CCC; }
 .box-button.dark:active {
   background-color: #333; }
+
+button.lg {
+  font-size: 16px;
+  padding: 16px 32px;
+  border-width: 4px; }
+
+button.sm {
+  font-size: 8px;
+  padding: 8px 16px;
+  border-width: 2px; }
+
+h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
+  color: #999; }
+
+h1.sm {
+  font-size: 48px; }
+
+h2.sm {
+  font-size: 32px; }
+
+h3.sm {
+  font-size: 24px; }
+
+h4.sm, h5.sm {
+  font-size: 12px; }
+
+h6.sm {
+  font-size: 8px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
