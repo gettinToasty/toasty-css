@@ -10,6 +10,11 @@
 
 }
 
+nav.row.dark {
+  border-color: $gray;
+}
+
+
 nav.row a.dark {
   &:hover, &:focus {
     color: $lighter-gray;

@@ -514,6 +514,9 @@ nav.tabs {
   .dark:active, input.dark:active, nav.row a.dark:active {
     color: #CCC; }
 
+nav.row.dark {
+  border-color: #666; }
+
 nav.row a.dark:hover, nav.row a.dark:focus {
   color: #CCC; }
 
