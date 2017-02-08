@@ -1,5 +1,5 @@
 # Toasty CSS
-The easiest way to use Toasty CSS is from the master.css file from this GitHub repo [here](./docs/master.css), copy it into your project's folder, and import it into your HTML file you want to style like so:
+The easiest way to use Toasty CSS is from the master.css file from this GitHub repo [here](./stylesheets/master.css), copy it into your project's folder, and import it into your HTML file you want to style like so:
 ```
 <link rel="stylesheet" href="./master.css">
 ```
