@@ -22,6 +22,7 @@ h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
 
 input[type="text"].dark {
   z-index: 2;
+  color: $lighter-gray;
   &:focus {
     border-color: $lighter-gray;
   }
@@ -31,5 +32,31 @@ label.dark {
   &:before {
     color: $gray;
     z-index: 1;
+  }
+}
+
+button.dark {
+  &:before, &:after {
+    color: $gray;
+  }
+
+  &:hover {
+    &:before, &:after {
+      color: $lighter-gray;
+    }
+  }
+}
+
+.box-button.dark {
+  &:before, &:after {
+    background-color: $lighter-gray;
+  }
+
+  &:hover {
+    color: $lighter-gray;
+  }
+
+  &:active {
+    background-color: $dark-gray;
   }
 }

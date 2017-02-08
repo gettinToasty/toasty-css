@@ -521,13 +521,26 @@ h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
   color: #CCC; }
 
 input[type="text"].dark {
-  z-index: 2; }
+  z-index: 2;
+  color: #CCC; }
   input[type="text"].dark:focus {
     border-color: #CCC; }
 
 label.dark:before {
   color: #666;
   z-index: 1; }
+
+button.dark:before, button.dark:after {
+  color: #666; }
+button.dark:hover:before, button.dark:hover:after {
+  color: #CCC; }
+
+.box-button.dark:before, .box-button.dark:after {
+  background-color: #CCC; }
+.box-button.dark:hover {
+  color: #CCC; }
+.box-button.dark:active {
+  background-color: #333; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
