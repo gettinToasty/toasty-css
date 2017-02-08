@@ -1,6 +1,12 @@
 # Toasty CSS
+The easiest way to use Toasty CSS is from the master.css file from this GitHub repo [here](./docs/master.css), copy it into your project's folder, and import it into your HTML file you want to style like so:
+```
+<link rel="stylesheet" href="./master.css">
+```
 
 Toasty CSS is a lightweight, open-source alternative to popular web frameworks like Bootstrap. Built entirely in CSS and SASS, Toasty CSS offers users a quick and painless way to implement modern styling on their webpage. Filled with pre-made components and primed for user customizability, Toasty CSS can make a website look amazing without relying on bulky libraries like jQuery.
+
+If you're familiar with SASS and would like a higher degree of customizability, you can grab the entire [stylesheets](./stylesheets) folder and change whatever you like!
 
 ## Usage Guidelines
 
