@@ -2996,6 +2996,9 @@ pre.snippet {
   .row {
     flex-wrap: wrap; }
 
+  .grid-demo, .black {
+    width: 90%; }
+
   .row.fixed {
     flex-wrap: nowrap; }
     .row.fixed .col-1-1, .row.fixed .col-2-2, .row.fixed .col-4-4, .row.fixed .col-8-8 {
