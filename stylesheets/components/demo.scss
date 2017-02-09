@@ -167,3 +167,28 @@ pre.snippet {
   padding: 16px;
   margin-bottom: 16px;
 }
+
+.spin {
+
+  &:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+.hover {
+  color: $lighter-gray;
+  transition: all 1s;
+
+  &:hover {
+    color: $dark-gray;
+    cursor: pointer;
+  }
+}
