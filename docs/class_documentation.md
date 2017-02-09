@@ -15,16 +15,12 @@
 | Box Button | box-button | button | Coming Soon |
 | Link Styled like button | link-button | a | Coming Soon |
 | Tabbed Navigation | tabs | nav | Coming Soon |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+
+## Full Modifier List
+
+| Modifier | Class Name | Usage |
+|---|:---:|---|
+| Dark | dark | Pages/elements with a dark background |
+| Large | lg | Larger-sized buttons |
+| Small (Buttons) | sm | Smaller-sized buttons |
+| Small (Headers) | sm | Smaller headers, subheaders |
