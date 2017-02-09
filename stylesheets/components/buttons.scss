@@ -16,6 +16,9 @@ button, .link-button {
     cursor: pointer;
     border: 2px solid $dark-gray;
 
+  }
+
+  .link-button {
     &:before, &:after {
       display: none;
     }
@@ -64,6 +67,7 @@ button, .link-button {
 
     &:after, &:before {
       height: 100%;
+      display: block;
     }
   }
 
@@ -78,6 +82,7 @@ button, .link-button {
   &:before, &:after {
     font-size: 16px;
     position: absolute;
+    display: block;
     color: $light-gray;
     transition: all 0.2s;
   }
@@ -97,6 +102,7 @@ button, .link-button {
     border: none;
 
     &:before, &:after {
+      display: block;
       color: $dark-gray;
     }
 

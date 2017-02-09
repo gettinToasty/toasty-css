@@ -179,8 +179,8 @@ button, .link-button {
   button:hover, .link-button:hover {
     cursor: pointer;
     border: 2px solid #333; }
-    button:hover:before, button:hover:after, .link-button:hover:before, .link-button:hover:after {
-      display: none; }
+  button .link-button:before, button .link-button:after, .link-button .link-button:before, .link-button .link-button:after {
+    display: none; }
   button:active, .link-button:active {
     color: #333; }
   button:focus, .link-button:focus {
@@ -211,7 +211,8 @@ button, .link-button {
     cursor: pointer;
     color: #333; }
     .box-button:hover:after, .box-button:hover:before {
-      height: 100%; }
+      height: 100%;
+      display: block; }
   .box-button:active {
     background-color: #CCC; }
 
@@ -220,6 +221,7 @@ button, .link-button {
   .brace-button:before, .brace-button:after {
     font-size: 16px;
     position: absolute;
+    display: block;
     color: #999;
     transition: all 0.2s; }
   .brace-button:after {
@@ -233,6 +235,7 @@ button, .link-button {
   .brace-button:hover {
     border: none; }
     .brace-button:hover:before, .brace-button:hover:after {
+      display: block;
       color: #333; }
     .brace-button:hover:before {
       left: 0; }
