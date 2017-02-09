@@ -163,302 +163,6 @@ nav.row {
 .monospace, pre, code {
   font-family: "Anonymous Pro", monospace; }
 
-button, .link-button {
-  box-sizing: border-box;
-  padding: 8px 16px;
-  margin: 8px;
-  border: none;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-weight: bold;
-  font-size: 12px;
-  position: relative;
-  color: #999;
-  border: 2px solid #999;
-  transition: all 0.2s; }
-  button:hover, .link-button:hover {
-    cursor: pointer;
-    border: 2px solid #333; }
-  button .link-button:before, button .link-button:after, .link-button .link-button:before, .link-button .link-button:after {
-    display: none; }
-  button:active, .link-button:active {
-    color: #333; }
-  button:focus, .link-button:focus {
-    outline: none; }
-
-.box-button {
-  border: none;
-  border-bottom: 2px solid #999;
-  border-top: 2px solid #999; }
-  .box-button:after, .box-button:before {
-    content: "";
-    width: 2px;
-    height: 0;
-    position: absolute;
-    display: block;
-    background-color: #333;
-    transition: all 0.2s; }
-  .box-button:before {
-    left: 0;
-    top: 0; }
-  .box-button:after {
-    right: 0;
-    bottom: 0; }
-  .box-button:hover {
-    border: none;
-    border-bottom: 2px solid #333;
-    border-top: 2px solid #333;
-    cursor: pointer;
-    color: #333; }
-    .box-button:hover:after, .box-button:hover:before {
-      height: 100%;
-      display: block; }
-  .box-button:active {
-    background-color: #CCC; }
-
-.brace-button {
-  border: none; }
-  .brace-button:before, .brace-button:after {
-    font-size: 16px;
-    position: absolute;
-    display: block;
-    color: #999;
-    transition: all 0.2s; }
-  .brace-button:after {
-    content: "}";
-    top: 5px;
-    right: 8px; }
-  .brace-button:before {
-    content: "{";
-    top: 5px;
-    left: 8px; }
-  .brace-button:hover {
-    border: none; }
-    .brace-button:hover:before, .brace-button:hover:after {
-      display: block;
-      color: #333; }
-    .brace-button:hover:before {
-      left: 0; }
-    .brace-button:hover:after {
-      right: 0; }
-  .brace-button:active {
-    color: #333; }
-
-input[type="text"], input[type="password"] {
-  box-sizing: border-box;
-  position: relative;
-  min-width: 200px;
-  display: block;
-  margin: 12px 0 0 8px;
-  font-size: 16px;
-  padding: 0 0 0 80px;
-  border: none;
-  border-bottom: 2px solid #999;
-  border-right: 2px solid #999;
-  content: attr(name);
-  height: 16px;
-  transition: 0.2s all;
-  background-color: transparent;
-  color: #333; }
-  input[type="text"]:hover, input[type="password"]:hover {
-    border-color: #333; }
-  input[type="text"]:focus, input[type="password"]:focus {
-    border-bottom: 2px solid #333;
-    border-right: 2px solid #333;
-    outline: none;
-    height: 24px;
-    padding: 24px 80px 8px 0; }
-
-label {
-  padding-top: 8px;
-  position: relative;
-  display: block; }
-  label:before {
-    content: attr(for);
-    text-transform: uppercase;
-    position: absolute;
-    display: block;
-    z-index: -1;
-    top: 16px;
-    left: 8px;
-    font-size: 12px;
-    color: #999; }
-
-textarea {
-  display: block;
-  border: 2px solid #999;
-  padding: 8px;
-  font-size: 16px;
-  transition: 0.2s all;
-  position: relative;
-  margin: 8px; }
-  textarea:before {
-    content: attr(name);
-    position: absolute;
-    display: block;
-    font-size: 12px;
-    text-transform: uppercase;
-    height: 50px;
-    width: auto;
-    top: 0;
-    left: 0;
-    color: #999;
-    background-color: white; }
-  textarea:hover {
-    border-color: #333; }
-  textarea:focus {
-    outline: none;
-    border-color: #333; }
-
-a {
-  text-decoration: none;
-  position: relative; }
-  a:before, a:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    width: 0;
-    background-color: blue;
-    top: 18px;
-    transition: 0.2s all; }
-  a:before {
-    left: 50%; }
-  a:after {
-    right: 50%; }
-  a:hover:before, a:hover:after {
-    width: 50%; }
-
-nav.row {
-  align-items: center;
-  height: auto;
-  border-bottom: 1px solid #CCC;
-  border-top: 1px solid #CCC; }
-  nav.row button {
-    margin: 0; }
-  nav.row a {
-    color: #999;
-    text-transform: uppercase;
-    transition: 0.2s all; }
-    nav.row a:hover {
-      color: #333; }
-      nav.row a:hover:before, nav.row a:hover:after {
-        display: none; }
-    nav.row a:focus {
-      color: #333; }
-
-nav.tabs {
-  border: none;
-  justify-content: flex-start; }
-  nav.tabs a {
-    border: 1px solid #999;
-    border-radius: 4px 4px 0 0;
-    padding: 14px;
-    background-color: #CCC;
-    width: 100%;
-    display: block;
-    position: relative;
-    text-align: center; }
-    nav.tabs a:before, nav.tabs a:after {
-      background-color: transparent;
-      box-sizing: border-box;
-      content: "";
-      display: block;
-      position: absolute;
-      border-bottom: 1px solid #999;
-      width: 4px;
-      top: 52px;
-      bottom: -100px; }
-    nav.tabs a:before {
-      left: -4px; }
-    nav.tabs a:after {
-      right: -4px; }
-    nav.tabs a:hover {
-      background-color: white; }
-      nav.tabs a:hover:before, nav.tabs a:hover:after {
-        display: block; }
-    nav.tabs a:focus {
-      border-bottom: 1px solid white;
-      background-color: white; }
-
-.dark, input.dark, nav.row a.dark {
-  color: #666;
-  border-color: #666; }
-  .dark:hover, input.dark:hover, nav.row a.dark:hover {
-    border-color: #CCC; }
-  .dark:active, input.dark:active, nav.row a.dark:active {
-    color: #CCC; }
-
-nav.row.dark {
-  border-color: #666; }
-
-nav.row a.dark {
-  background-color: transparent; }
-  nav.row a.dark:before, nav.row a.dark:after {
-    border-color: #666; }
-  nav.row a.dark:hover, nav.row a.dark:focus {
-    color: #CCC; }
-
-nav.row.tabs a.dark:hover {
-  background-color: #333;
-  border-color: #666; }
-nav.row.tabs a.dark:focus {
-  border-bottom: 1px solid transparent;
-  color: #CCC; }
-
-h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
-  color: #CCC; }
-
-input[type="text"].dark {
-  z-index: 2;
-  color: #CCC; }
-  input[type="text"].dark:focus {
-    border-color: #CCC; }
-
-label.dark:before {
-  color: #666;
-  z-index: 1; }
-
-button.dark:before, button.dark:after {
-  color: #666; }
-button.dark:hover:before, button.dark:hover:after {
-  color: #CCC; }
-
-.box-button.dark:before, .box-button.dark:after {
-  background-color: #CCC; }
-.box-button.dark:hover {
-  color: #CCC; }
-.box-button.dark:active {
-  background-color: #333; }
-
-button.lg {
-  font-size: 16px;
-  padding: 16px 32px;
-  border-width: 4px; }
-
-button.sm {
-  font-size: 8px;
-  padding: 8px 16px;
-  border-width: 2px; }
-
-h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
-  color: #999; }
-
-h1.sm {
-  font-size: 48px; }
-
-h2.sm {
-  font-size: 32px; }
-
-h3.sm {
-  font-size: 24px; }
-
-h4.sm, h5.sm {
-  font-size: 12px; }
-
-h6.sm {
-  font-size: 8px; }
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2782,6 +2486,335 @@ h6.sm {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+button, .link-button {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 8px;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  color: #999;
+  border: 2px solid #999;
+  transition: all 0.2s; }
+  button:hover, .link-button:hover {
+    cursor: pointer;
+    border: 2px solid #333; }
+  button .link-button:before, button .link-button:after, .link-button .link-button:before, .link-button .link-button:after {
+    display: none; }
+  button:active, .link-button:active {
+    color: #333; }
+  button:focus, .link-button:focus {
+    outline: none; }
+
+.box-button {
+  border: none;
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999; }
+  .box-button:after, .box-button:before {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    display: block;
+    background-color: #333;
+    transition: all 0.2s; }
+  .box-button:before {
+    left: 0;
+    top: 0; }
+  .box-button:after {
+    right: 0;
+    bottom: 0; }
+  .box-button:hover {
+    border: none;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+    cursor: pointer;
+    color: #333; }
+    .box-button:hover:after, .box-button:hover:before {
+      height: 100%;
+      display: block; }
+  .box-button:active {
+    background-color: #CCC; }
+
+.brace-button {
+  border: none; }
+  .brace-button:before, .brace-button:after {
+    font-size: 16px;
+    position: absolute;
+    display: block;
+    color: #999;
+    transition: all 0.2s; }
+  .brace-button:after {
+    content: "}";
+    top: 5px;
+    right: 8px; }
+  .brace-button:before {
+    content: "{";
+    top: 5px;
+    left: 8px; }
+  .brace-button:hover {
+    border: none; }
+    .brace-button:hover:before, .brace-button:hover:after {
+      display: block;
+      color: #333; }
+    .brace-button:hover:before {
+      left: 0; }
+    .brace-button:hover:after {
+      right: 0; }
+  .brace-button:active {
+    color: #333; }
+
+input[type="text"], input[type="password"] {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 200px;
+  display: block;
+  margin: 12px 0 0 8px;
+  font-size: 16px;
+  padding: 0 0 0 80px;
+  border: none;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  content: attr(name);
+  height: 16px;
+  transition: 0.2s all;
+  background-color: transparent;
+  color: #333; }
+  input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #333; }
+  input[type="text"]:focus, input[type="password"]:focus {
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    outline: none;
+    height: 24px;
+    padding: 24px 80px 8px 0; }
+
+label {
+  padding-top: 8px;
+  position: relative;
+  display: block; }
+  label:before {
+    content: attr(for);
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 16px;
+    left: 8px;
+    font-size: 12px;
+    color: #999; }
+
+textarea {
+  display: block;
+  border: 2px solid #999;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.2s all;
+  position: relative;
+  margin: 8px; }
+  textarea:before {
+    content: attr(name);
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 50px;
+    width: auto;
+    top: 0;
+    left: 0;
+    color: #999;
+    background-color: white; }
+  textarea:hover {
+    border-color: #333; }
+  textarea:focus {
+    outline: none;
+    border-color: #333; }
+
+a {
+  text-decoration: none;
+  position: relative; }
+  a:before, a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: blue;
+    top: 18px;
+    transition: 0.2s all; }
+  a:before {
+    left: 50%; }
+  a:after {
+    right: 50%; }
+  a:hover:before, a:hover:after {
+    width: 50%; }
+
+nav.row {
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC; }
+  nav.row button {
+    margin: 0; }
+  nav.row a {
+    color: #999;
+    text-transform: uppercase;
+    transition: 0.2s all; }
+    nav.row a:hover {
+      color: #333; }
+      nav.row a:hover:before, nav.row a:hover:after {
+        display: none; }
+    nav.row a:focus {
+      color: #333; }
+
+nav.tabs {
+  border: none;
+  justify-content: flex-start; }
+  nav.tabs a {
+    border: 1px solid #999;
+    border-radius: 4px 4px 0 0;
+    padding: 14px;
+    background-color: #CCC;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center; }
+    nav.tabs a:before, nav.tabs a:after {
+      background-color: transparent;
+      box-sizing: border-box;
+      content: "";
+      display: block;
+      position: absolute;
+      border-bottom: 1px solid #999;
+      width: 4px;
+      top: 52px;
+      bottom: -100px; }
+    nav.tabs a:before {
+      left: -4px; }
+    nav.tabs a:after {
+      right: -4px; }
+    nav.tabs a:hover {
+      background-color: white; }
+      nav.tabs a:hover:before, nav.tabs a:hover:after {
+        display: block; }
+    nav.tabs a:focus {
+      border-bottom: 1px solid white;
+      background-color: white; }
+
+div.hamburger {
+  width: 32px;
+  height: 32px;
+  position: relative; }
+  div.hamburger:before {
+    font-family: "FontAwesome";
+    font-size: 32px;
+    content: "\f0c9";
+    color: #333;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  div.hamburger ul {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    padding: 16px;
+    border: 2px solid #333;
+    top: -1px;
+    right: -1px;
+    z-index: 5000; }
+  div.hamburger:hover ul {
+    display: block; }
+
+div.hamburger.left ul, div.dropdown.left ul {
+  top: -1px;
+  left: -1px;
+  right: auto; }
+
+.dark, input.dark, nav.row a.dark {
+  color: #666;
+  border-color: #666; }
+  .dark:hover, input.dark:hover, nav.row a.dark:hover {
+    border-color: #CCC; }
+  .dark:active, input.dark:active, nav.row a.dark:active {
+    color: #CCC; }
+
+nav.row.dark {
+  border-color: #666; }
+
+nav.row a.dark {
+  background-color: transparent; }
+  nav.row a.dark:before, nav.row a.dark:after {
+    border-color: #666; }
+  nav.row a.dark:hover, nav.row a.dark:focus {
+    color: #CCC; }
+
+nav.row.tabs a.dark:hover {
+  background-color: #333;
+  border-color: #666; }
+nav.row.tabs a.dark:focus {
+  border-bottom: 1px solid transparent;
+  color: #CCC; }
+
+h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
+  color: #CCC; }
+
+input[type="text"].dark {
+  z-index: 2;
+  color: #CCC; }
+  input[type="text"].dark:focus {
+    border-color: #CCC; }
+
+label.dark:before {
+  color: #666;
+  z-index: 1; }
+
+button.dark:before, button.dark:after {
+  color: #666; }
+button.dark:hover:before, button.dark:hover:after {
+  color: #CCC; }
+
+.box-button.dark:before, .box-button.dark:after {
+  background-color: #CCC; }
+.box-button.dark:hover {
+  color: #CCC; }
+.box-button.dark:active {
+  background-color: #333; }
+
+button.lg {
+  font-size: 16px;
+  padding: 16px 32px;
+  border-width: 4px; }
+
+button.sm {
+  font-size: 8px;
+  padding: 8px 16px;
+  border-width: 2px; }
+
+h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
+  color: #999; }
+
+h1.sm {
+  font-size: 48px; }
+
+h2.sm {
+  font-size: 32px; }
+
+h3.sm {
+  font-size: 24px; }
+
+h4.sm, h5.sm {
+  font-size: 12px; }
+
+h6.sm {
+  font-size: 8px; }
 
 .grid-demo {
   width: 100%;
