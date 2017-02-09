@@ -2809,7 +2809,6 @@ h6.sm {
 .grid-content, .components-content, .typography-content, .customization-content {
   box-sizing: border-box;
   height: auto;
-  padding-top: 100px;
   flex-grow: 0;
   flex-shrink: 1; }
 
