@@ -1,7 +1,7 @@
 # Toasty CSS
 Toasty CSS is a lightweight, open-source alternative to popular web frameworks like Bootstrap. Built entirely in CSS and SASS, Toasty CSS offers users a quick and painless way to implement modern styling on their webpage. Filled with pre-made components and primed for user customizability, Toasty CSS can make a website look amazing without relying on bulky libraries like jQuery.
 
-The easiest way to use Toasty CSS if by just including this line in your HTML file's <head>, seriously, that's it!
+The easiest way to use Toasty CSS if by just including this line in your HTML file's `<head>`, seriously, that's it!
 ```
 <link rel="stylesheet" href="https://cdn.rawgit.com/gettinToasty/toasty-css/master/stylesheets/master.min.css">
 ```
