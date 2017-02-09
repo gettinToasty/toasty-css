@@ -28,7 +28,7 @@ A full list of class names and their corresponding components can be seen [here]
 
 ### The Grid
 
-Toasty CSS uses modern styling technology, the flexbox framework, to build it's layout grid. This automatically makes your page responsive to various screen sizes and even mobile devices without you having to worry about configuring it. Flexbox is a powerful tool that Toasty CSS leverages to make sure everything appears exactly where it should on a page. You can see an example of The Grid in action on the [Toasty CSS demo page](./index.html).
+Toasty CSS uses modern styling technology, the flexbox framework, to build it's layout grid. This automatically makes your page responsive to various screen sizes and even mobile devices without you having to worry about configuring it. Flexbox is a powerful tool that Toasty CSS leverages to make sure everything appears exactly where it should on a page. You can see an example of The Grid in action on the [Toasty CSS demo page](https://gettintoasty.github.io/toasty-css/).
 
 The Grid dynamically handles resizing the window and includes break points to re-arrange the data in a way that is still easily readable even at small screen sizes. The Grid is comprised of rows, which are comprised of columns, like the general structure seen below:
 ```
