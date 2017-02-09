@@ -11,12 +11,13 @@ function stickyRelocate() {
 }
 
 $(function() {
-    $(window).scroll(stickyRelocate);
-    stickyRelocate();
+  $(window).scroll(stickyRelocate);
+  stickyRelocate();
 
-    $('.static-link').click(e => {
-      e.preventDefault();
-    });
+  $('.static-link').click(e => {
+    e.preventDefault();
+  });
+
 });
 
 var dir = 1;

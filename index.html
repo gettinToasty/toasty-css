@@ -10,7 +10,20 @@
     <script type="text/javascript" src="./scripts/stickem.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.container').stickem();
+        var windowsize = $(window).width();
+        if (windowsize <= 990) {
+          $('.container').stickem().destroy();
+        } else {
+          $('.container').stickem();
+        }
+
+        $(window).resize(function() {
+          if (windowsize <= 990) {
+            $('.container').stickem().destroy();
+          } else {
+            $('.container').stickem();
+          }
+        });
       });
     </script>
 
@@ -28,7 +41,7 @@
       </div>
     </header>
     <div id="sticky-anchor"></div>
-    <nav class="row" id="sticky">
+    <nav class="row fixed" id="sticky">
       <div class="col-1-4">
         <a href="#grid">The Grid</a>
       </div>
@@ -47,7 +60,7 @@
     </nav>
     <div class="container">
 
-      <div class="row right stickem-container">
+      <div class="body row right stickem-container">
 
         <section class="col-1-2 stickem" id="grid">
           <div>
@@ -58,7 +71,7 @@
           </div>
         </section>
 
-        <section class="grid-content col-1-2">
+        <section class="grid-content col-1-2" id="grid-content">
           <h3>Sample Grid</h3>
 
           <div class="grid-demo">
@@ -128,9 +141,9 @@
         </section>
       </div>
 
-      <div class="row left stickem-container">
+      <div class="body row left stickem-container">
 
-        <section class="components-content col-1-2">
+        <section class="components-content col-1-2" id="components-content">
           <h3>
             User Input
           </h3>
@@ -229,7 +242,7 @@
         </section>
       </div>
 
-      <div class="row right stickem-container">
+      <div class="body row right stickem-container">
 
         <section class="col-1-2 stickem" id="typography">
           <div>
@@ -240,7 +253,7 @@
           </div>
         </section>
 
-        <section class="typography-content col-1-2">
+        <section class="typography-content col-1-2" id="typography-content">
           <h3>Defaults</h3>
           <p>
             Out of the box Toasty CSS provides a sans-serif look using Open Sans, designed by Steve Matteson. It's a highly-readable font at every weight for print, web, and mobile. Toasty CSS also makes some typographical decisions for you by replacing the formatting of every text tag you'll need to create a clean, consistent look. Body text defaults to 16 pixels for maximum readability on a variety of screen sizes with a line-height of 24 pixels. This default value is applied to the body and all p tags, which have an additional bottom and left margin of 16 pixels.
@@ -296,8 +309,8 @@
         </section>
       </div>
 
-      <div class="row left stickem-container">
-        <section class="customization-content col-1-2">
+      <div class="body row left stickem-container">
+        <section class="customization-content col-1-2" id="customization-content">
           <h3>Modifier Classes</h3>
           <p>
             Toasty CSS offers a few modifier classes you can use in combination with the default classes to customize your experience even more. The most common example of these is the "dark" class, which updates the colors to work better on a dark-colored background like black and is works for most elements.
