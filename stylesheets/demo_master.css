@@ -2713,7 +2713,7 @@ div.hamburger {
     font-family: "FontAwesome";
     font-size: 32px;
     content: "\f0c9";
-    color: #333;
+    color: #999;
     position: absolute;
     display: block;
     left: 50%;
@@ -2725,11 +2725,19 @@ div.hamburger {
     position: absolute;
     min-width: 200px;
     background-color: white;
-    padding: 16px;
-    border: 2px solid #333;
+    padding: 0px;
     top: -1px;
     right: -1px;
-    z-index: 5000; }
+    z-index: 5000;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+  div.hamburger li {
+    padding: 8px 16px;
+    color: #333; }
+    div.hamburger li:hover {
+      background-color: #CCC;
+      cursor: pointer; }
+    div.hamburger li:active {
+      background-color: #999; }
   div.hamburger:hover ul {
     display: block; }
 
