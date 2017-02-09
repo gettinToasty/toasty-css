@@ -25,5 +25,7 @@
 | Large | lg | Larger-sized buttons |
 | Small (Buttons) | sm | Smaller-sized buttons |
 | Small (Headers) | sm | Smaller headers, subheaders |
+| Left (Row) | left | Justifies non-full row to the left side |
+| Right (Row) | right | Justifies non-full row to the right side |
 | Fixed (Row) | fixed | Row will not wrap at small window sizes |
 | Fixed (Column) | fixed | Column will not resize within it's row |
