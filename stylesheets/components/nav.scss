@@ -128,7 +128,38 @@ div.hamburger {
   }
 }
 
-div.hamburger.left, div.dropdown.left {
+div.settings {
+  @extend div.hamburger;
+
+  &:before {
+    content: "\f013";
+  }
+}
+
+div.dropdown {
+  @extend div.hamburger;
+  width: 200px;
+
+  &:before {
+    @extend button;
+    font-family: $sans;
+    font-size: 12px;
+    content: attr(name);
+    width: 200px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  ul {
+    top: -6px;
+    left: 0;
+    width: 200px;
+    min-width: 200px;
+  }
+}
+
+div.hamburger.left, div.settings.left {
   ul {
     top: -1px;
     left: -1px;
