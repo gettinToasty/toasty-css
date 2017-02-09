@@ -68,7 +68,7 @@
     flex-wrap: wrap;
   }
 
-  .row.fixed {
+  .row.fixed, nav.row {
     flex-wrap: nowrap;
 
     .col-1-1, .col-2-2, .col-4-4, .col-8-8 {

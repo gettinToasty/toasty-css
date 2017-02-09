@@ -101,23 +101,23 @@ table {
   .row {
     flex-wrap: wrap; }
 
-  .row.fixed {
+  .row.fixed, nav.row {
     flex-wrap: nowrap; }
-    .row.fixed .col-1-1, .row.fixed .col-2-2, .row.fixed .col-4-4, .row.fixed .col-8-8 {
+    .row.fixed .col-1-1, .row.fixed .col-2-2, .row.fixed .col-4-4, .row.fixed .col-8-8, nav.row .col-1-1, nav.row .col-2-2, nav.row .col-4-4, nav.row .col-8-8 {
       flex: 1 1 100%; }
-    .row.fixed .col-7-8 {
+    .row.fixed .col-7-8, nav.row .col-7-8 {
       flex: 1 1 87.5%; }
-    .row.fixed .col-3-4, .row.fixed .col-6-8 {
+    .row.fixed .col-3-4, .row.fixed .col-6-8, nav.row .col-3-4, nav.row .col-6-8 {
       flex: 1 1 75%; }
-    .row.fixed .col-5-8 {
+    .row.fixed .col-5-8, nav.row .col-5-8 {
       flex: 1 1 62.5%; }
-    .row.fixed .col-1-2, .row.fixed .col-2-4, .row.fixed .col-4-8 {
+    .row.fixed .col-1-2, .row.fixed .col-2-4, .row.fixed .col-4-8, nav.row .col-1-2, nav.row .col-2-4, nav.row .col-4-8 {
       flex: 1 1 50%; }
-    .row.fixed .col-3-8 {
+    .row.fixed .col-3-8, nav.row .col-3-8 {
       flex: 1 1 37.5%; }
-    .row.fixed .col-1-4, .row.fixed .col-2-8 {
+    .row.fixed .col-1-4, .row.fixed .col-2-8, nav.row .col-1-4, nav.row .col-2-8 {
       flex: 1 1 25%; }
-    .row.fixed .col-1-8 {
+    .row.fixed .col-1-8, nav.row .col-1-8 {
       flex: 1 1 12.5%; }
 
   .col, .col-1-1, .col-7-8, .col-3-4, .col-5-8, .col-1-2, .col-3-8, .col-1-4, .col-1-8 {
@@ -2999,23 +2999,23 @@ pre.snippet {
   .grid-demo, .black {
     width: 90%; }
 
-  .row.fixed {
+  .row.fixed, nav.row {
     flex-wrap: nowrap; }
-    .row.fixed .col-1-1, .row.fixed .col-2-2, .row.fixed .col-4-4, .row.fixed .col-8-8 {
+    .row.fixed .col-1-1, .row.fixed .col-2-2, .row.fixed .col-4-4, .row.fixed .col-8-8, nav.row .col-1-1, nav.row .col-2-2, nav.row .col-4-4, nav.row .col-8-8 {
       flex: 1 1 100%; }
-    .row.fixed .col-7-8 {
+    .row.fixed .col-7-8, nav.row .col-7-8 {
       flex: 1 1 87.5%; }
-    .row.fixed .col-3-4, .row.fixed .col-6-8 {
+    .row.fixed .col-3-4, .row.fixed .col-6-8, nav.row .col-3-4, nav.row .col-6-8 {
       flex: 1 1 75%; }
-    .row.fixed .col-5-8 {
+    .row.fixed .col-5-8, nav.row .col-5-8 {
       flex: 1 1 62.5%; }
-    .row.fixed .col-1-2, .row.fixed .col-2-4, .row.fixed .col-4-8 {
+    .row.fixed .col-1-2, .row.fixed .col-2-4, .row.fixed .col-4-8, nav.row .col-1-2, nav.row .col-2-4, nav.row .col-4-8 {
       flex: 1 1 50%; }
-    .row.fixed .col-3-8 {
+    .row.fixed .col-3-8, nav.row .col-3-8 {
       flex: 1 1 37.5%; }
-    .row.fixed .col-1-4, .row.fixed .col-2-8 {
+    .row.fixed .col-1-4, .row.fixed .col-2-8, nav.row .col-1-4, nav.row .col-2-8 {
       flex: 1 1 25%; }
-    .row.fixed .col-1-8 {
+    .row.fixed .col-1-8, nav.row .col-1-8 {
       flex: 1 1 12.5%; }
 
   .col, .col-1-1, .col-7-8, .col-3-4, .col-5-8, .col-1-2, .col-3-8, .col-1-4, .col-1-8 {

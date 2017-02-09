@@ -15,6 +15,7 @@
 | Box Button | box-button | button | Coming Soon |
 | Link Styled like button | link-button | a | Coming Soon |
 | Tabbed Navigation | tabs | nav | Coming Soon |
+| Hamburger Menu | hamburger | div | Coming Soon |
 
 ## Full Modifier List
 
@@ -24,3 +25,5 @@
 | Large | lg | Larger-sized buttons |
 | Small (Buttons) | sm | Smaller-sized buttons |
 | Small (Headers) | sm | Smaller headers, subheaders |
+| Fixed (Row) | fixed | Row will not wrap at small window sizes |
+| Fixed (Column) | fixed | Column will not resize within it's row |
