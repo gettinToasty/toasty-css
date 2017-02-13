@@ -2530,6 +2530,8 @@ button, div.dropdown:before, .link-button {
     height: 0;
     width: 0;
     display: none; }
+  button a.link-button:visited, div.dropdown:before a.link-button:visited, button .link-button.monochrome:visited, div.dropdown:before .link-button.monochrome:visited, .link-button a.link-button:visited, .link-button .link-button.monochrome:visited {
+    color: #999; }
   button:active, div.dropdown:active:before, .link-button:active {
     color: #333; }
   button:focus, div.dropdown:focus:before, .link-button:focus {
@@ -3010,6 +3012,8 @@ pre.snippet {
 
 a.static-link.link-button:before, .static-link.link-button.monochrome:before, a.static-link.link-button:after, .static-link.link-button.monochrome:after {
   display: none; }
+a.static-link.link-button:visited, .static-link.link-button.monochrome:visited {
+  color: #999; }
 a.static-link.link-button:hover:before, .static-link.link-button.monochrome:hover:before, a.static-link.link-button:hover:after, .static-link.link-button.monochrome:hover:after {
   content: "";
   height: 0;

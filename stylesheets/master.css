@@ -2629,6 +2629,8 @@ button, div.dropdown:before, .link-button {
     height: 0;
     width: 0;
     display: none; }
+  button a.link-button:visited, div.dropdown:before a.link-button:visited, button .link-button.monochrome:visited, div.dropdown:before .link-button.monochrome:visited, .link-button a.link-button:visited, .link-button .link-button.monochrome:visited {
+    color: #999; }
   button:active, div.dropdown:active:before, .link-button:active {
     color: #333; }
   button:focus, div.dropdown:focus:before, .link-button:focus {

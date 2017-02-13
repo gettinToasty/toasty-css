@@ -31,6 +31,10 @@ button, .link-button {
         display: none;
       }
     }
+
+    &:visited {
+      color: $light-gray;
+    }
   }
 
   &:active {

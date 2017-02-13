@@ -166,6 +166,10 @@ a.static-link.link-button {
     display: none;
   }
 
+  &:visited {
+    color: $light-gray;
+  }
+
   &:hover {
     &:before, &:after {
       content: "";
