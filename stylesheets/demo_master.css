@@ -2524,6 +2524,8 @@ button, div.dropdown:before, .link-button {
     border: 2px solid #333; }
   button .link-button:before, div.dropdown:before .link-button:before, button .link-button:after, div.dropdown:before .link-button:after, .link-button .link-button:before, .link-button .link-button:after {
     display: none; }
+  button .link-button:hover:before, div.dropdown:before .link-button:hover:before, button .link-button:hover:after, div.dropdown:before .link-button:hover:after, .link-button .link-button:hover:before, .link-button .link-button:hover:after {
+    display: none; }
   button:active, div.dropdown:active:before, .link-button:active {
     color: #333; }
   button:focus, div.dropdown:focus:before, .link-button:focus {
