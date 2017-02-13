@@ -16,6 +16,8 @@
 | Link Styled like button | link-button | a | Coming Soon |
 | Tabbed Navigation | tabs | nav | Coming Soon |
 | Hamburger Menu | hamburger | div | Coming Soon |
+| Dropdown | dropdown | div | Coming Soon |
+| Settings | settings | div | Coming Soon |
 
 ## Full Modifier List
 
@@ -29,3 +31,4 @@
 | Right (Row) | right | Justifies non-full row to the right side |
 | Fixed (Row) | fixed | Row will not wrap at small window sizes |
 | Fixed (Column) | fixed | Column will not resize within it's row |
+| Monochrome Links | monochrome | Links will follow gray color scheme |
