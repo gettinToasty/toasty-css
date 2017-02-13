@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
   position: relative;
+  color: #0000EE;
 
   &:before, &:after {
     content: "";
@@ -8,10 +9,18 @@ a {
     position: absolute;
     height: 1px;
     width: 0;
-    background-color: blue;
+    background-color: #0000EE;
     top: 18px;
     transition: 0.2s all;
 
+  }
+
+  &:visited {
+    color: #551A8B;
+
+    &:before, &:after {
+      background-color: #551A8B;
+    }
   }
 
   &:before {
@@ -26,6 +35,23 @@ a {
 
     &:before, &:after {
       width: 50%;
+    }
+  }
+}
+
+.monochrome {
+  @extend a;
+  color: $light-gray;
+
+  &:before, &:after {
+    background-color: $light-gray;
+  }
+
+  &:visited {
+    color: $gray;
+
+    &:before, &:after {
+      background-color: $gray;
     }
   }
 }

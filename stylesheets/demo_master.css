@@ -8,7 +8,8 @@
 */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a,
+.monochrome, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i,
@@ -122,7 +123,7 @@ table {
 
   .col, .col-1-1, .col-7-8, .col-3-4, .col-5-8, .col-1-2, .col-3-8, .col-1-4, .col-1-8 {
     flex: 0 0 100%; } }
-h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, div {
+h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, .monochrome, div {
   font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5 {
@@ -2522,9 +2523,9 @@ button, div.dropdown:before, .link-button {
   button:hover, div.dropdown:hover:before, .link-button:hover {
     cursor: pointer;
     border: 2px solid #333; }
-  button a.link-button:before, div.dropdown:before a.link-button:before, button a.link-button:after, div.dropdown:before a.link-button:after, .link-button a.link-button:before, .link-button a.link-button:after {
+  button a.link-button:before, div.dropdown:before a.link-button:before, button .link-button.monochrome:before, div.dropdown:before .link-button.monochrome:before, button a.link-button:after, div.dropdown:before a.link-button:after, button .link-button.monochrome:after, div.dropdown:before .link-button.monochrome:after, .link-button a.link-button:before, .link-button .link-button.monochrome:before, .link-button a.link-button:after, .link-button .link-button.monochrome:after {
     display: none; }
-  button a.link-button:hover:before, div.dropdown:before a.link-button:hover:before, button a.link-button:hover:after, div.dropdown:before a.link-button:hover:after, .link-button a.link-button:hover:before, .link-button a.link-button:hover:after {
+  button a.link-button:hover:before, div.dropdown:before a.link-button:hover:before, button .link-button.monochrome:hover:before, div.dropdown:before .link-button.monochrome:hover:before, button a.link-button:hover:after, div.dropdown:before a.link-button:hover:after, button .link-button.monochrome:hover:after, div.dropdown:before .link-button.monochrome:hover:after, .link-button a.link-button:hover:before, .link-button .link-button.monochrome:hover:before, .link-button a.link-button:hover:after, .link-button .link-button.monochrome:hover:after {
     content: "";
     height: 0;
     width: 0;
@@ -2658,24 +2659,38 @@ textarea {
     outline: none;
     border-color: #333; }
 
-a {
+a, .monochrome {
   text-decoration: none;
-  position: relative; }
-  a:before, a:after {
+  position: relative;
+  color: #0000EE; }
+  a:before, .monochrome:before, a:after, .monochrome:after {
     content: "";
     display: block;
     position: absolute;
     height: 1px;
     width: 0;
-    background-color: blue;
+    background-color: #0000EE;
     top: 18px;
     transition: 0.2s all; }
-  a:before {
+  a:visited, .monochrome:visited {
+    color: #551A8B; }
+    a:visited:before, .monochrome:visited:before, a:visited:after, .monochrome:visited:after {
+      background-color: #551A8B; }
+  a:before, .monochrome:before {
     left: 50%; }
-  a:after {
+  a:after, .monochrome:after {
     right: 50%; }
-  a:hover:before, a:hover:after {
+  a:hover:before, .monochrome:hover:before, a:hover:after, .monochrome:hover:after {
     width: 50%; }
+
+.monochrome {
+  color: #999; }
+  .monochrome:before, .monochrome:after {
+    background-color: #999; }
+  .monochrome:visited {
+    color: #666; }
+    .monochrome:visited:before, .monochrome:visited:after {
+      background-color: #666; }
 
 nav.row {
   align-items: center;
@@ -2684,21 +2699,21 @@ nav.row {
   border-top: 1px solid #CCC; }
   nav.row button, nav.row div.dropdown:before {
     margin: 0; }
-  nav.row a {
+  nav.row a, nav.row .monochrome {
     color: #999;
     text-transform: uppercase;
     transition: 0.2s all; }
-    nav.row a:hover {
+    nav.row a:hover, nav.row .monochrome:hover {
       color: #333; }
-      nav.row a:hover:before, nav.row a:hover:after {
+      nav.row a:hover:before, nav.row .monochrome:hover:before, nav.row a:hover:after, nav.row .monochrome:hover:after {
         display: none; }
-    nav.row a:focus {
+    nav.row a:focus, nav.row .monochrome:focus {
       color: #333; }
 
 nav.tabs {
   border: none;
   justify-content: flex-start; }
-  nav.tabs a {
+  nav.tabs a, nav.tabs .monochrome {
     border: 1px solid #999;
     border-radius: 4px 4px 0 0;
     padding: 14px;
@@ -2707,7 +2722,7 @@ nav.tabs {
     display: block;
     position: relative;
     text-align: center; }
-    nav.tabs a:before, nav.tabs a:after {
+    nav.tabs a:before, nav.tabs .monochrome:before, nav.tabs a:after, nav.tabs .monochrome:after {
       background-color: transparent;
       box-sizing: border-box;
       content: "";
@@ -2717,15 +2732,15 @@ nav.tabs {
       width: 4px;
       top: 52px;
       bottom: -100px; }
-    nav.tabs a:before {
+    nav.tabs a:before, nav.tabs .monochrome:before {
       left: -4px; }
-    nav.tabs a:after {
+    nav.tabs a:after, nav.tabs .monochrome:after {
       right: -4px; }
-    nav.tabs a:hover {
+    nav.tabs a:hover, nav.tabs .monochrome:hover {
       background-color: white; }
-      nav.tabs a:hover:before, nav.tabs a:hover:after {
+      nav.tabs a:hover:before, nav.tabs .monochrome:hover:before, nav.tabs a:hover:after, nav.tabs .monochrome:hover:after {
         display: block; }
-    nav.tabs a:focus {
+    nav.tabs a:focus, nav.tabs .monochrome:focus {
       border-bottom: 1px solid white;
       background-color: white; }
 
@@ -2789,28 +2804,28 @@ div.hamburger.left ul, div.left.settings ul, div.left.dropdown ul, div.settings.
   left: -1px;
   right: auto; }
 
-.dark, input.dark, nav.row a.dark {
+.dark, input.dark, nav.row a.dark, nav.row .dark.monochrome {
   color: #666;
   border-color: #666; }
-  .dark:hover, input.dark:hover, nav.row a.dark:hover {
+  .dark:hover, input.dark:hover, nav.row a.dark:hover, nav.row .dark.monochrome:hover {
     border-color: #CCC; }
-  .dark:active, input.dark:active, nav.row a.dark:active {
+  .dark:active, input.dark:active, nav.row a.dark:active, nav.row .dark.monochrome:active {
     color: #CCC; }
 
 nav.row.dark {
   border-color: #666; }
 
-nav.row a.dark {
+nav.row a.dark, nav.row .dark.monochrome {
   background-color: transparent; }
-  nav.row a.dark:before, nav.row a.dark:after {
+  nav.row a.dark:before, nav.row .dark.monochrome:before, nav.row a.dark:after, nav.row .dark.monochrome:after {
     border-color: #666; }
-  nav.row a.dark:hover, nav.row a.dark:focus {
+  nav.row a.dark:hover, nav.row .dark.monochrome:hover, nav.row a.dark:focus, nav.row .dark.monochrome:focus {
     color: #CCC; }
 
-nav.row.tabs a.dark:hover {
+nav.row.tabs a.dark:hover, nav.row.tabs .dark.monochrome:hover {
   background-color: #333;
   border-color: #666; }
-nav.row.tabs a.dark:focus {
+nav.row.tabs a.dark:focus, nav.row.tabs .dark.monochrome:focus {
   border-bottom: 1px solid transparent;
   color: #CCC; }
 
@@ -2890,7 +2905,7 @@ h6.sm {
     .icons i:hover {
       color: #333;
       cursor: pointer; }
-  .icons a:hover:before, .icons a:hover:after {
+  .icons a:hover:before, .icons .monochrome:hover:before, .icons a:hover:after, .icons .monochrome:hover:after {
     display: none; }
 
 .grid-content, .components-content, .typography-content, .customization-content {
@@ -2993,9 +3008,9 @@ pre.snippet {
     padding: 8px 0 8px 32px;
     font-size: 16px; }
 
-a.static-link.link-button:before, a.static-link.link-button:after {
+a.static-link.link-button:before, .static-link.link-button.monochrome:before, a.static-link.link-button:after, .static-link.link-button.monochrome:after {
   display: none; }
-a.static-link.link-button:hover:before, a.static-link.link-button:hover:after {
+a.static-link.link-button:hover:before, .static-link.link-button.monochrome:hover:before, a.static-link.link-button:hover:after, .static-link.link-button.monochrome:hover:after {
   content: "";
   height: 0;
   width: 0;
