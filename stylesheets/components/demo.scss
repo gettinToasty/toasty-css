@@ -161,6 +161,21 @@ pre.snippet {
   border: 1px solid $gray;
 }
 
+a.static-link.link-button {
+  &:before, &:after {
+    display: none;
+  }
+
+  &:hover {
+    &:before, &:after {
+      content: "";
+      height: 0;
+      width: 0;
+      display: none;
+    }
+  }
+}
+
 .black {
   background-color: black;
   padding: 16px;

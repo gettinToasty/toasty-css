@@ -18,13 +18,16 @@ button, .link-button {
 
   }
 
-  .link-button {
+  a.link-button {
     &:before, &:after {
       display: none;
     }
 
     &:hover {
       &:before, &:after {
+        content: "";
+        height: 0;
+        width: 0;
         display: none;
       }
     }

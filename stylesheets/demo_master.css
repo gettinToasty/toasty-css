@@ -2522,9 +2522,12 @@ button, div.dropdown:before, .link-button {
   button:hover, div.dropdown:hover:before, .link-button:hover {
     cursor: pointer;
     border: 2px solid #333; }
-  button .link-button:before, div.dropdown:before .link-button:before, button .link-button:after, div.dropdown:before .link-button:after, .link-button .link-button:before, .link-button .link-button:after {
+  button a.link-button:before, div.dropdown:before a.link-button:before, button a.link-button:after, div.dropdown:before a.link-button:after, .link-button a.link-button:before, .link-button a.link-button:after {
     display: none; }
-  button .link-button:hover:before, div.dropdown:before .link-button:hover:before, button .link-button:hover:after, div.dropdown:before .link-button:hover:after, .link-button .link-button:hover:before, .link-button .link-button:hover:after {
+  button a.link-button:hover:before, div.dropdown:before a.link-button:hover:before, button a.link-button:hover:after, div.dropdown:before a.link-button:hover:after, .link-button a.link-button:hover:before, .link-button a.link-button:hover:after {
+    content: "";
+    height: 0;
+    width: 0;
     display: none; }
   button:active, div.dropdown:active:before, .link-button:active {
     color: #333; }
@@ -2989,6 +2992,14 @@ pre.snippet {
     width: 100%;
     padding: 8px 0 8px 32px;
     font-size: 16px; }
+
+a.static-link.link-button:before, a.static-link.link-button:after {
+  display: none; }
+a.static-link.link-button:hover:before, a.static-link.link-button:hover:after {
+  content: "";
+  height: 0;
+  width: 0;
+  display: none; }
 
 .black {
   background-color: black;
