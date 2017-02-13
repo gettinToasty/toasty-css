@@ -63,6 +63,7 @@ There are a few other goodies for users of The Grid, as well. If you want an ele
 
 ### Components
 Toasty CSS provides a healthy library of prebuilt components right out of the box. The full component list is [here](./docs/class_documentation.md), and it covers everything from form inputs to buttons to navigation. Seeing is believing so here is an idea of what the Toasty styling library will give you:
+
 ![component preview](./docs/component_preview.png)
 
 ### Typography
