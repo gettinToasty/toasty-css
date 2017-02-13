@@ -22,6 +22,12 @@ button, .link-button {
     &:before, &:after {
       display: none;
     }
+
+    &:hover {
+      &:before, &:after {
+        display: none;
+      }
+    }
   }
 
   &:active {
