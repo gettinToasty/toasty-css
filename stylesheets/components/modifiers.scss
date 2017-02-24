@@ -1,85 +1,85 @@
 .dark, input.dark, nav.row a.dark {
-  color: $gray;
-  border-color: $gray;
+  color: $light-white;
+  border-color: $light-white;
   &:hover {
-    border-color: $lighter-gray;
+    border-color: $dark-white;
   }
   &:active {
-    color: $lighter-gray;
+    color: $dark-white;
   }
 
 }
 
 nav.row.dark {
-  border-color: $gray;
+  border-color: $light-white;
 }
 
 nav.row a.dark {
   background-color: transparent;
 
   &:before, &:after {
-    border-color: $gray;
+    border-color: $light-white;
   }
 
   &:hover, &:focus {
-    color: $lighter-gray;
+    color: $dark-white;
   }
 }
 
 nav.row.tabs a.dark {
   &:hover {
-    background-color: $dark-gray;
-    border-color: $gray;
+    background-color: $lighter-white;
+    border-color: $light-white;
   }
 
   &:focus {
     border-bottom: 1px solid transparent;
-    color: $lighter-gray;
+    color: $dark-white;
   }
 }
 
 h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark, p.dark, span.dark {
-  color: $lighter-gray;
+  color: $dark-white;
 }
 
 input[type="text"].dark {
   z-index: 2;
-  color: $lighter-gray;
+  color: $dark-white;
   &:focus {
-    border-color: $lighter-gray;
+    border-color: $dark-white;
   }
 }
 
 label.dark {
   &:before {
-    color: $gray;
+    color: $light-white;
     z-index: 1;
   }
 }
 
 button.dark {
   &:before, &:after {
-    color: $gray;
+    color: $light-white;
   }
 
   &:hover {
     &:before, &:after {
-      color: $lighter-gray;
+      color: $dark-white;
     }
   }
 }
 
 .box-button.dark {
   &:before, &:after {
-    background-color: $lighter-gray;
+    background-color: $dark-white;
   }
 
   &:hover {
-    color: $lighter-gray;
+    color: $dark-white;
   }
 
   &:active {
-    background-color: $dark-gray;
+    background-color: $lighter-white;
   }
 }
 
@@ -96,7 +96,7 @@ button.sm {
 }
 
 h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
-  color: $light-gray;
+  color: $mid-white;
 }
 
 h1.sm {
