@@ -2871,7 +2871,7 @@ button.sm, div.sm.dropdown:before {
   border-width: 2px; }
 
 h1.sm, h2.sm, h3.sm, h4.sm, h5.sm, h6.sm {
-  color: rgba(255, 255, 255, 0.6); }
+  color: rgba(0, 0, 0, 0.6); }
 
 h1.sm {
   font-size: 48px; }
