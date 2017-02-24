@@ -18,6 +18,7 @@
 | Hamburger Menu | hamburger | div | Coming Soon |
 | Dropdown | dropdown | div | Coming Soon |
 | Settings | settings | div | Coming Soon |
+| Box | box | most elements | Coming Soon |
 
 ## Full Modifier List
 
