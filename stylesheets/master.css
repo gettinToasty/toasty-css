@@ -2810,6 +2810,19 @@ div.hamburger.left ul, div.left.settings ul, div.left.dropdown ul, div.settings.
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 16px; }
 
+.tag {
+  padding: 4px 8px;
+  margin: 4px 2px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 24px;
+  transition: all 0.2s; }
+  .tag:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+
 .dark, input.dark, nav.row a.dark, nav.row .dark.monochrome {
   color: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.4); }
