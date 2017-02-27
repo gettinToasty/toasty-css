@@ -19,6 +19,7 @@
 | Dropdown | dropdown | div | Coming Soon |
 | Settings | settings | div | Coming Soon |
 | Box | box | most elements | Coming Soon |
+| Tag/Label | tag | most elements | Coming Soon |
 
 ## Full Modifier List
 
