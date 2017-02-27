@@ -2811,13 +2811,14 @@ div.hamburger.left ul, div.left.settings ul, div.left.dropdown ul, div.settings.
   padding: 16px; }
 
 .tag {
+  box-sizing: border-box;
   padding: 4px 8px;
   margin: 4px 2px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   font-size: 12px;
   text-transform: uppercase;
-  height: 24px;
+  height: 32px;
   transition: all 0.2s; }
   .tag:hover {
     background-color: rgba(0, 0, 0, 0.2);

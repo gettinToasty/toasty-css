@@ -4,13 +4,14 @@
 }
 
 .tag {
+  box-sizing: border-box;
   padding: 4px 8px;
   margin: 4px 2px;
   border: 1px solid $light-gray;
   border-radius: 4px;
   font-size: 12px;
   text-transform: uppercase;
-  height: 24px;
+  height: 32px;
   transition: all 0.2s;
 
   &:hover {
