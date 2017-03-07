@@ -34,3 +34,14 @@
 | Fixed (Row) | fixed | Row will not wrap at small window sizes |
 | Fixed (Column) | fixed | Column will not resize within it's row |
 | Monochrome Links | monochrome | Links will follow gray color scheme |
+
+## Input Labels
+
+Input labels are used by wrapping them around a `text` or `password` type input like so:
+```
+<label for="username">
+  <input type="text" name="username" />
+</label>
+```
+
+Labels are essential for Toasty CSS inputs to be styled correctly, as the accompanying text of an input is decided via the label's `for` attribute. This is the one scenario where it is not the `class`, but the `for` which should be paid attention.

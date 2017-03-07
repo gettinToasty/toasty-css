@@ -88,7 +88,6 @@ Applying a modifier is as simple as appending the class to your element:
 ### Components
 * Button Groups
 * Pagination
-* Email-specific input
 * Thumbnails
 * Alerts
 * Insets
