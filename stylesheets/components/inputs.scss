@@ -48,7 +48,11 @@ label {
 
 label[for="email"], label[for="Email"], label[for="mail"], label[for="Mail"] {
   &:before {
-    content: "\xf0e0";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    content: "";
+    top: 13px;
+    left: 10px;
   }
 }
 

@@ -2632,8 +2632,16 @@ label {
     z-index: -1;
     top: 16px;
     left: 8px;
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.4); }
+
+label[for="email"]:before, label[for="Email"]:before, label[for="mail"]:before, label[for="Mail"]:before {
+  font-family: "FontAwesome";
+  font-size: 16px;
+  content: "";
+  top: 13px;
+  left: 10px; }
 
 textarea {
   display: block;
