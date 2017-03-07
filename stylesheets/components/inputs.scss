@@ -28,6 +28,15 @@ input[type="text"], input[type="password"] {
   }
 }
 
+input[type="text"].icon, input[type="password"].icon {
+  padding: 0 48px 0 32px;
+  min-width: 200px;
+
+  &:focus {
+    padding: 24px 80px 8px 0;
+  }
+}
+
 label {
   &:before {
     content: attr(for);
@@ -46,11 +55,31 @@ label {
   display: block;
 }
 
-label[for="email"], label[for="Email"], label[for="mail"], label[for="Mail"] {
+label[for="email"].icon, label[for="Email"].icon, label[for="mail"].icon, label[for="Mail"].icon {
   &:before {
     font-family: "FontAwesome";
     font-size: 16px;
     content: "";
+    top: 13px;
+    left: 10px;
+  }
+}
+
+label[for="password"].icon, label[for="Password"].icon, label[for="key"].icon, label[for="Key"].icon {
+  &:before {
+    font-family: "FontAwesome";
+    content: "";
+    font-size: 16px;
+    top: 13px;
+    left: 10px;
+  }
+}
+
+label[for="username"].icon, label[for="Username"].icon, label[for="user"].icon, label[for="User"].icon {
+  &:before {
+    font-family: "FontAwesome";
+    content: "";
+    font-size: 16px;
     top: 13px;
     left: 10px;
   }

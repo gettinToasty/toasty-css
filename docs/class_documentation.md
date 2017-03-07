@@ -45,3 +45,9 @@ Input labels are used by wrapping them around a `text` or `password` type input 
 ```
 
 Labels are essential for Toasty CSS inputs to be styled correctly, as the accompanying text of an input is decided via the label's `for` attribute. This is the one scenario where it is not the `class`, but the `for` which should be paid attention.
+
+If you want to substitute the text of an input label into a corresponding FontAwesome icon, simply append add `class="icon"` to the label. If you want to adjust the input's offset for the icon labels, simply add a `class="icon"` to the input as well. Supported `for`s for icons are:
+
+* `User` `user` `Username` `username`
+* `Email` `email` `Mail` `mail`
+* `Password` `password` `Key` `key`
