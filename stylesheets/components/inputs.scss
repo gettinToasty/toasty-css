@@ -46,6 +46,12 @@ label {
   display: block;
 }
 
+label[for="email"], label[for="Email"], label[for="mail"], label[for="Mail"] {
+  &:before {
+    content: "\xf0e0";
+  }
+}
+
 textarea {
   display: block;
   border: 2px solid $light-gray;
