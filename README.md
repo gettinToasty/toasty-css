@@ -3,7 +3,7 @@ Life is beautiful, websites should be too. Toasty CSS is a lightweight, open-sou
 
 The easiest way to use Toasty CSS if by just including this line in your HTML file's `<head>`, seriously, that's it!
 ```
-<link rel="stylesheet" href="https://cdn.rawgit.com/gettinToasty/toasty-css/91ce9d39/stylesheets/master-v-0-1-1.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/gettinToasty/toasty-css/1a7a642e/stylesheets/master-v-0-1-2.min.css">
 ```
 
 If you're familiar with SASS and would like a higher degree of customizability, you can grab the entire [stylesheets](./stylesheets) folder and change whatever you like!
