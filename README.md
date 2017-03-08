@@ -95,6 +95,9 @@ Applying a modifier is as simple as appending the class to your element:
 ### Grid
 As CSS' new "grid" functionality becomes more supported we are dedicated to incorporating elements of it into the Toasty CSS Grid to allow users even more flexibility when creating their layouts.
 
+### Performance
+* Include a GZIP version of Toasty CSS for a reduced filesize
+
 ## License (MIT)
 Copyright 2017 Sean Beyer
 
